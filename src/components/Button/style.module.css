@@ -1,0 +1,24 @@
+.btnWrapper {
+    padding: 10px;
+    color: #FEFEFE;
+    width: 300px;
+    background-color: #111;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btnInner {
+    padding: 14px;
+    border: 1px solid #FEFEFE;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btnInner > span {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.btnWrapper:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .5);
+}

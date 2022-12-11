@@ -1,0 +1,39 @@
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.contentSide {
+    width: 600px;
+}
+
+.image {
+    height: 100vh;
+    /* width: 100px; */
+    background-image: url("https://sun9-north.userapi.com/sun9-79/s/v1/ig2/POxLrqMXw3Glga4JguF74-dUXkrn_RubPav7uMnhjtcQ82zdMj-ho5Zkf_eJGadSxzfX6qkRhABga42LCzGN1pjJ.jpg?size=1440x2160&quality=95&type=album");
+}
+
+.contentSide {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.infoBlock {
+    min-width: 500px;
+    margin-top: 30vh;
+    margin-left: 140px;
+    margin-right: 20px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.infoBlock > p > span {
+    text-shadow: 5px 5px rgba(161, 159, 159, 0.596);
+    font-size: 50px;
+    font-weight: 600;
+}
