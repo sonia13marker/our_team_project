@@ -12,7 +12,7 @@ export const Header = () => {
                 <div className={style.contentSide}>
                     <Nav />
                     <div className={style.infoBlock}>
-                        <p><span>WebClick - </span><br />креативное агенство <br />по созданию веб-сайтов</p>
+                        <p><span className={style.headingTitle1}>WebClick - </span><span className={style.headingTitle1Stroke1}>WebClick - </span><br />креативное агенство <br />по созданию веб-сайтов</p>
                         <Button />
                     </div>
                 </div>

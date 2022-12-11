@@ -5,10 +5,11 @@
     padding-top: 50px;
     display: flex;
     gap: 90px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .navElem {
+    padding: 2px;
     transition: .5s;
     cursor: pointer;
 }

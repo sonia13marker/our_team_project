@@ -1,7 +1,7 @@
 .panelWrapper {
     width: 120px;
-    height: 105vh;
-    position: fixed;
+    height: 103vh;
+    position: absolute;
     background-color: white;
     border-right: 1px solid black;
     margin-top: -21px;
@@ -17,8 +17,4 @@
     width: 22px;
     cursor: pointer;
     transition: 0.5s;
-}
-
-.panelElem > img:hover {
-    box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, .2);
 }
