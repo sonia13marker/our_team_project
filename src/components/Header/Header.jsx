@@ -18,8 +18,6 @@ export const Header = () => {
                 </div>
                 <div className={style.image}></div> 
             </div>
-            
-            <h1>hello</h1>
         </div>
     )
 }
