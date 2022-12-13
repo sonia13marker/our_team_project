@@ -3,14 +3,10 @@ import { Footer } from '../Footer/Footer'
 
 export const Layout = (props) => {
     return <div>
-        <header>
-            <Header />
-        </header>
+        <Header />
         <main>
             { props.children }
         </main>
-        <footer>
-            <Footer />
-        </footer>
+        <Footer />
     </div>
 }

@@ -1,23 +1,16 @@
-import { LeftPanel } from "../LeftPanel/LeftPanel"
-import { Button } from "../Button/Button"
-import { Nav } from '../Nav/Nav'
-
 import style from './style.module.css'
+import {Link} from "react-router-dom";
 
 export const Header = () => {
-    return (
-        <div>
-            <LeftPanel />
-            <div className={style.wrapper}>
-                <div className={style.contentSide}>
-                    <Nav />
-                    <div className={style.infoBlock}>
-                        <p><span className={style.headingTitle1}>WebClick - </span><span className={style.headingTitle1Stroke1}>WebClick - </span><br />креативное агенство <br />по созданию веб-сайтов</p>
-                        <Button />
-                    </div>
-                </div>
-                <div className={style.image}></div> 
-            </div>
+    return <nav className={style.nav}>
+        <Link to="/about" className={style.nav_elem}>
+            О нас
+        </Link>
+        <div className={style.nav_elem}>
+            Портфолио
         </div>
-    )
+        <div className={style.nav_elem}>
+            Контакты
+        </div>
+    </nav>
 }

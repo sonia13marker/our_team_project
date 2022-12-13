@@ -4,7 +4,6 @@
     position: absolute;
     background-color: white;
     border-right: 1px solid black;
-    margin-top: -21px;
     display: grid;
     grid-template-columns: 1fr;
 }

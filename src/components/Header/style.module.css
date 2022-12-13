@@ -1,59 +1,20 @@
-h1 {
-    margin: 0;
-    padding: 0;
+.nav {
+    margin-left: 120px;
+    padding-left: 60px;
+    display: flex;
+    gap: 90px;
+    font-size: 17px;
+    height: 4rem;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+.nav_elem {
+    transition: box-shadow .5s;
+    cursor: pointer;
+    margin: auto 0;
+    color: black;
+    text-decoration: none;
 }
 
-.contentSide {
-    width: 600px;
-}
-
-.image {
-    height: 100vh;
-    /* width: 100px; */
-    background-image: url("https://sun9-north.userapi.com/sun9-79/s/v1/ig2/POxLrqMXw3Glga4JguF74-dUXkrn_RubPav7uMnhjtcQ82zdMj-ho5Zkf_eJGadSxzfX6qkRhABga42LCzGN1pjJ.jpg?size=1440x2160&quality=95&type=album");
-}
-
-.contentSide {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.infoBlock {
-    min-width: 500px;
-    margin-top: 30vh;
-    margin-left: 140px;
-    margin-right: 20px;
-    font-size: 35px;
-    font-weight: 400;
-}
-
-.infoBlock > p {
-    position: relative;
-}
-
-.infoBlock > p > span {
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.headingTitle1 {
-    font-size: 8vw;
-    color: #111;
-    margin: 0;
-    position: relative;
-    z-index: 2;
-}
-
-.headingTitle1Stroke1 {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
-    position: absolute;
-    left: 3px;
-    top: 33px;
-    transform: translateY(-50%);
+.nav_elem:hover {
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, .2);
 }
