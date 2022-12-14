@@ -1,6 +1,7 @@
 import style from "./style.module.css";
 import {Button} from "../../components/Button/Button";
 import {LeftPanel} from "../../components/LeftPanel/LeftPanel";
+import {SoftSkills} from "../../components/SoftSkills/SoftSkills";
 
 export const MainPage = () => {
     return (
@@ -17,6 +18,7 @@ export const MainPage = () => {
                     <div className={style.image}></div>
                 </div>
             </div>
+
             <SoftSkills/>
         </>
     )
