@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    background-color: #000;
+    color: #FFF;
+
+    font-family: 'Ruda', sans-serif;
+    font-style: normal;
+}
+
+.background {
+    position: absolute;
+    overflow: hidden;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+    font-size: 150px;
+    -webkit-text-stroke: 1px #FFF;
+    -webkit-text-fill-color: transparent;
+}
+
+.ul {
+    text-align: right;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item {
+    list-style-type: none;
+    padding: 30px 110px;
+}
