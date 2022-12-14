@@ -60,14 +60,14 @@
     background-color: #f1f1f1;
 }
 
-.languages_btn {
+.btn {
     background-color: #000;
     color: #FFF;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin-top: 80px;
 }
+
 .lang_arrow {
     width: 8px;
     height: 5px;
