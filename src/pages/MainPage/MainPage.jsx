@@ -18,12 +18,19 @@ export const MainPage = () => {
                             <Button />
                         </div>
                     </div>
+                    <div className={style.changeBtns}>
+                            {/* Что я предлагаю сделать: менять содержимое кнопки "Язык" в зависимости от языка
+                                т.е если стоит русский язык, то в самой кнопке надпись "Русский"
+                                При клике содержимое кнопки менялось бы на "English"*/}
+                            <p className={style.changeBtn}>Русский</p>
+                            <p className={style.changeBtn}>Тема</p>
+                    </div>
                     <div className={style.image}></div>
                 </div>
             </div>
 
-{/*перенести все это в AboutPage*/}
-<AboutComp/>
+            {/*перенести все это в AboutPage*/}
+            <AboutComp/>
             <SoftSkills/>
             <TechStack></TechStack> 
             <OurTeam />

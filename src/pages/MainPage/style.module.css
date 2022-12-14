@@ -26,6 +26,7 @@ h1 {
 }
 
 .contentSide {
+    position: relative;
     margin-right: auto;
     margin-left: auto;
 }
@@ -63,4 +64,17 @@ h1 {
     left: 3px;
     top: 33px;
     transform: translateY(-50%);
+}
+
+.changeBtns {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    bottom: 40px;
+    right: 43vw;
+    font-size: 18px;
+}
+
+.changeBtn {
+    cursor: pointer;
 }
