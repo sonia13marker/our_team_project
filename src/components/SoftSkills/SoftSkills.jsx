@@ -3,7 +3,7 @@ import style from './style.module.css'
 // import classnames from 'classnames';
 
 
-export const Ф = () => {
+export const SoftSkills = () => {
     return (
         <div className={style.container}>
             <div className={style.background}>
