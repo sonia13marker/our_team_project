@@ -68,3 +68,8 @@
     cursor: pointer;
     margin-top: 80px;
 }
+.lang_arrow {
+    width: 8px;
+    height: 5px;
+    margin-left: 2px;
+}

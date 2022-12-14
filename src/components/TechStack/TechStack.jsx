@@ -2,10 +2,11 @@ import style from "./style.module.css";
 
 export function TechStack() {
     return <div className={style.wrapper}>
-        <span className={style.tech_line}>{"технологии ".repeat(16)}</span>
-        <span className={style.tech_line}>{"технологии ".repeat(16)}</span>
-        <span className={style.tech_line}>{"технологии ".repeat(16)}</span>
-        <span className={style.tech_line}>{"технологии ".repeat(16)}</span>
+        {/*заменила 16 на 10, для плавной анимации и нам не нужно так много*/}
+        <span className={style.tech_line}>{"технологии ".repeat(10)}</span>
+        <span className={style.tech_line}>{"технологии ".repeat(10)}</span>
+        <span className={style.tech_line}>{"технологии ".repeat(10)}</span>
+        <span className={style.tech_line}>{"технологии ".repeat(10)}</span>
         <div className={style.tech_stack}>
             <TechCard type="f1">react</TechCard>
             <TechCard type="f1">html 5</TechCard>
@@ -19,7 +20,9 @@ export function TechStack() {
             <TechCard type="f2">babel</TechCard>
             <TechCard type="f3">bootstrap</TechCard>
             <TechCard type="o">scss</TechCard>
+            <p className={style.text_down}>и ещё много всего</p>
         </div>
+       
     </div>
 }
 

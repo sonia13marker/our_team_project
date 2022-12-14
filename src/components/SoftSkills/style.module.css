@@ -2,7 +2,6 @@
     position: relative;
     background-color: #000;
     color: #FFF;
-
     font-family: 'Ruda', sans-serif;
     font-style: normal;
 }
@@ -18,7 +17,7 @@
     justify-content: center;
     align-items: center;
 
-    color: #FFF;
+    color: #fefefe;
     font-size: 150px;
     -webkit-text-stroke: 1px #FFF;
     -webkit-text-fill-color: transparent;
@@ -31,9 +30,14 @@
 .content {
     display: flex;
     justify-content: flex-end;
+    padding: 85px;
 }
 
 .item {
     list-style-type: none;
     padding: 30px 110px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fefefe;
+
 }

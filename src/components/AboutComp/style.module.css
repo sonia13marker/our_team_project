@@ -1,0 +1,39 @@
+.divBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 180px;
+    background-color: #fefefe;
+    margin: 150px 0;
+}
+.text {
+
+    font-family: 'Ruda', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #111;
+    padding: 0 37px;
+    width: 900px;
+    height: 100px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+} 
+ .arrow {
+    
+    width: 215px;
+    height: 79px;
+    margin-left: 83px;
+    display: flex;
+    display: inline;
+    justify-content: center;
+}
+.arrow:last-child {
+    margin-left: 37px;
+    overflow: hidden;
+}
+
