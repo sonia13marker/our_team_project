@@ -1,5 +1,8 @@
 .wrapper {
     position: relative;
+    clip: auto;
+    overflow: hidden;
+    z-index: 0;
     /* background-color: #fefefe; */
 }
 
@@ -8,13 +11,13 @@
     width: 905px;
     height: 305px;
     background: #fefefe;
-    margin: 205px auto 265px; /* ЗАМЕНИТЬ НА margin: 0 auto !!! */
+    margin: 0 auto 265px; /* ЗАМЕНИТЬ НА margin: 0 auto !!! */
     padding: 0 30px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 1;
 }
 
 .tech_card {
@@ -116,15 +119,9 @@
     margin: 30px auto 0;
 }
 /*нужно, чтобы они находились по 4 в линии (как минимум на 1920px и 1440рх)*/
-/* 
-@media (min-width: 1440px) {
-    .tech_stack {
-        max-width: 45%;
-    }
-}
 
-@media (min-width: 1200px) {
+@media (min-width: 1920px) {
     .tech_stack {
         max-width: 40%;
     }
-} */
+}

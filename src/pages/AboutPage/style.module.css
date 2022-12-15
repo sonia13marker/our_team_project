@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600&display=swap');
+
 .back {
     background-color: #fefefe;
+}
+
+.about_header {
+    font-weight: 400;
+    font-size: 4rem;
+    margin-left: 18%;
+    margin-top: 3rem;
 }
