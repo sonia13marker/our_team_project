@@ -12,7 +12,7 @@
     font-weight: 400;
     color: #111;
     padding: 0 37px;
-    width: 900px; /* Я крайне сомневаюсь что тут должно в пикселях быть, иб о на телефоне будет плохо */
+    width: 55vw;
     text-align: justify;
     margin: 0;
 }

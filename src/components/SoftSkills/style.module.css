@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600&display=swap');
+
 .container {
     position: relative;
     background-color: #000;
@@ -6,7 +8,11 @@
     font-style: normal;
 }
 
+
 .background {
+    /*оставила без 'Ruda', хотя бы так работает, потому что 
+    при 'Inter' та же фигня*/
+    font-family: sans-serif;
     position: absolute;
     overflow: hidden;
 
@@ -18,7 +24,7 @@
     align-items: center;
 
     color: #fefefe;
-    font-size: 150px;
+    font-size: 11vw;
     -webkit-text-stroke: 1px #FFF;
     -webkit-text-fill-color: transparent;
 }

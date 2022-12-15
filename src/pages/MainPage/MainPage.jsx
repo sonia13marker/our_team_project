@@ -1,10 +1,6 @@
 import style from "./style.module.css";
 import {Button} from "../../components/Button/Button";
 import {LeftPanel} from "../../components/LeftPanel/LeftPanel";
-import {SoftSkills} from "../../components/SoftSkills/SoftSkills";
-import { TechStack } from "../../components/TechStack/TechStack";
-import { AboutComp } from "../../components/AboutComp/AboutComp";
-import {OurTeam} from '../../components/OurTeam/OurTeam';
 
 export const MainPage = () => {
     return (
@@ -29,11 +25,11 @@ export const MainPage = () => {
                 </div>
             </div>
 
-            {/*перенести все это в AboutPage*/}
+            {/* перенести все это в AboutPage
             <AboutComp/>
             <SoftSkills/>
             <TechStack></TechStack> 
-            <OurTeam />
+            <OurTeam /> */}
         </>
     )
 }

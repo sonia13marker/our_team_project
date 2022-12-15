@@ -1,5 +1,5 @@
 import { Header } from '../Header/Header'
-import { Footer } from '../Footer/Footer'
+// import { Footer } from '../Footer/Footer'
 
 export const Layout = (props) => {
     return <div>
@@ -7,6 +7,7 @@ export const Layout = (props) => {
         <main>
             { props.children }
         </main>
-        <Footer />
+        {/*на MainPage не должно быть футера*/}
+        {/* <Footer /> */}
     </div>
 }

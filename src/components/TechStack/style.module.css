@@ -3,6 +3,7 @@
     clip: auto;
     overflow: hidden;
     z-index: 0;
+    margin-top: 30vh;
     /* background-color: #fefefe; */
 }
 
@@ -11,7 +12,7 @@
     width: 905px;
     height: 305px;
     background: #fefefe;
-    margin: 0 auto 265px; /* ЗАМЕНИТЬ НА margin: 0 auto !!! */
+    margin: 0 auto 20vh; /* ЗАМЕНИТЬ НА margin: 0 auto !!! */
     padding: 0 30px;
     display: flex;
     gap: 20px;

@@ -5,7 +5,9 @@
 }
 
 .about_header {
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
+    color: #111;
     font-size: 4rem;
     margin-left: 18%;
     margin-top: 3rem;

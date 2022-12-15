@@ -12,6 +12,11 @@
     border: 1px solid #FEFEFE;
     text-align: center;
     font-size: 18px;
+    color:#FEFEFE;
+}
+
+.noDec {
+    text-decoration: none;
 }
 
 .btnInner > span {

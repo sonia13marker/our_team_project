@@ -1,8 +1,8 @@
 import style from './style.module.css';
 import arrow_down from '../../images/arrow_down.svg';
 import arrow_top from '../../images/arrow_top.svg';
-import classNames from 'classnames';
-import { classes } from 'istanbul-lib-coverage';
+// import classNames from 'classnames';
+// import { classes } from 'istanbul-lib-coverage';
 
 export function  OurTeam() {
     return <div className={style.all_wrapper}>
