@@ -8,6 +8,9 @@ import img_white from "../../images/imgwhite.png";
 import img_dark from "../../images/imgblack.png";
 
 export const MainPage = () => {
+
+
+    
     return (
         <>
             <div className={style.main_page}>
