@@ -104,3 +104,60 @@
     font-size: 15px;
     margin: 20px;
 }
+
+
+/* Анимации для стрелочек */
+
+@keyframes swing {
+    30% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+
+    65% {
+        transform: translateY(2px);
+    }
+
+    80% {
+        transform: translateY(-1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes swing_reverse {
+    30% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    65% {
+        transform: translateY(-2px);
+    }
+
+    80% {
+        transform: translateY(1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.arr_down {
+    animation: swing 2s ease;
+    animation-iteration-count: infinite;
+}
+
+.arr_top {
+    animation: swing_reverse 2s ease;
+    animation-iteration-count: infinite;
+}
