@@ -2,6 +2,10 @@ import style from "./style.module.css";
 import {Button} from "../../components/Button/Button";
 import {LeftPanel} from "../../components/LeftPanel/LeftPanel";
 import {ContactsPage} from '../ContactsPage/ContactsPage';
+import {ColorImg} from "../../components/ColorImg/ColorImg";
+
+import img_white from "../../images/imgwhite.png";
+import img_dark from "../../images/imgblack.png";
 
 export const MainPage = () => {
     return (
@@ -22,7 +26,8 @@ export const MainPage = () => {
                             <p className={style.changeBtn}>Русский</p>
                             <p className={style.changeBtn}>Тема</p>
                     </div>
-                    <div className={style.image}></div>
+                    {/* <div className={style.image}></div> */}
+                    <ColorImg className={style.image} src_white={img_white} src_dark={img_dark} alt="main img"/>
                 </div>
             </div>
         </>
