@@ -3,8 +3,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-
-
+    position: absolute;
+    top: 0;
+    z-index: 2;
     margin-left: 120px;
     padding-left: 180px;
     display: flex;
@@ -14,7 +15,7 @@
 
 .nav_elem {
     transition: box-shadow .5s;
-    margin: 50px 0;
+    margin-top: auto;
     color: #111;
     text-decoration: none;
 }

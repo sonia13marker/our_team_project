@@ -6,10 +6,6 @@ h1 {
     padding: 0;
 }
 
-.main_page {
-    margin-top: -4rem;
-}
-
 .wrapper {
     display: grid;
     grid-template-columns: 3fr 2fr;

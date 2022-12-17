@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700&display=swap');
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+.projects_header {
+    font-family: "Ruda", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    margin-top: 4rem;
+}
+
+.projects_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-top: 1px solid #111;
+}
+
+.tags {
+    width: fit-content;
+    max-width: 250px;
+    border-right: 1px solid #111;
+    padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.tags__header {
+    margin-left: 1rem;
+    color: #000;
+}
+
+.tag {
+    border: 1px solid #111;
+    border-radius: 15px 15px 15px 0;
+    padding: 6px;
+}
+
+.tag > span {
+    font-family: "Ruda", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.tag > span:nth-child(2) {
+    color: rgb(120, 120, 120);
+}
+
+.tags_container {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.projects_container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem;
+    border-right: 1px solid #111;
+    font-family: "Ruda", sans-serif;
+    border-bottom: 1px solid #111;
+}
+
+.project__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.project__header > a {
+    color: #111;
+    text-decoration: none;
+    align-items: center;
+}
+
+.project__header img {
+    margin-left: 0.5rem;
+}
+
+.project__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.project__name {
+    margin-bottom: 1rem;
+}
+
+.project__description {
+    font-weight: 500;
+}
+
+.project__image {
+    width: 100%;
+    margin-top: 1rem;
+    height: 20rem;
+    object-fit: cover;
+    filter: saturate(0);
+    transition: filter .3s ease-in-out;
+}
+
+.project__image:hover {
+    filter: saturate(1);
+}

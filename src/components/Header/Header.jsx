@@ -5,16 +5,8 @@ export const Header = () => {
     return <nav className={style.nav}>
         {/*нет нужды оборачивать текст в div, исправила
         на span*/}
-        <span className={style.nav_elem}>
-        <Link to="/about" className={style.nav_elem}>
-            О нас
-        </Link>
-        </span>
-        <span className={style.nav_elem}>
-            <Link to="/#" className={style.nav_elem}>Портфолио</Link>
-        </span>
-        <span className={style.nav_elem}>
-            <Link to="/#" className={style.nav_elem}>Контакты</Link>
-        </span>
+        <Link to="/about" className={style.nav_elem}>О нас</Link>
+        <Link to="/portfolio" className={style.nav_elem}>Портфолио</Link>
+        <Link to="/#" className={style.nav_elem}>Контакты</Link>
     </nav>
 }
