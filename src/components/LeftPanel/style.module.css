@@ -2,7 +2,8 @@
     width: 120px;
     height: 100vh;
     position: absolute;
-    background-color: white;
+    color: var(--color-additional);
+    background-color: var(--color);
     border-right: 1px solid black;
     display: grid;
     grid-template-columns: 1fr;

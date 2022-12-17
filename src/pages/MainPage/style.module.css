@@ -17,8 +17,11 @@ h1 {
 
 .image {
     height: 100vh;
-    /* width: 100px; */
+    width: 100%;
+
+    /*
     background-image: url("https://sun9-north.userapi.com/sun9-79/s/v1/ig2/POxLrqMXw3Glga4JguF74-dUXkrn_RubPav7uMnhjtcQ82zdMj-ho5Zkf_eJGadSxzfX6qkRhABga42LCzGN1pjJ.jpg?size=1440x2160&quality=95&type=album");
+    */
 }
 
 .contentSide {
@@ -47,7 +50,7 @@ h1 {
 
 .headingTitle1 {
     font-size: 8vw;
-    color: #111;
+    color: var(--color-additional);
     margin: 0;
     position: relative;
     z-index: 2;
@@ -55,7 +58,7 @@ h1 {
 
 .headingTitle1Stroke1 {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1px var(--color-additional);
     position: absolute;
     left: 3px;
     top: 33px;
@@ -69,6 +72,7 @@ h1 {
     bottom: 40px;
     right: 43vw;
     font-size: 18px;
+    color: var(--color-additional);
 }
 
 .changeBtn {

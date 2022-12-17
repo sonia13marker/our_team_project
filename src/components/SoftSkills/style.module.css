@@ -2,16 +2,16 @@
 
 .container {
     position: relative;
-    background-color: #000;
-    color: #FFF;
+    background-color: var(--color-additional);
+    color: var(--color);
     font-family: 'Ruda', sans-serif;
     font-style: normal;
 }
 
 
 .background {
-    /*оставила без 'Ruda', хотя бы так работает, потому что 
-    при 'Inter' та же фигня*/
+    /* оставила без 'Ruda', хотя бы так работает, потому что
+    при 'Inter' та же фигня */
     font-family: sans-serif;
     position: absolute;
     overflow: hidden;
@@ -23,9 +23,9 @@
     justify-content: center;
     align-items: center;
 
-    color: #fefefe;
+    color: var(--color);
     font-size: 11vw;
-    -webkit-text-stroke: 1px #FFF;
+    -webkit-text-stroke: 1px var(--color);
     -webkit-text-fill-color: transparent;
 }
 
@@ -44,6 +44,6 @@
     padding: 30px 110px;
     font-size: 20px;
     font-weight: 600;
-    color: #fefefe;
+    color: var(--color);
 
 }

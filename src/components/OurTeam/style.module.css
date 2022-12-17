@@ -7,19 +7,19 @@
     font-style: normal;
     font-weight: 600;
     font-size: 50px;
-    color: #111;
+    color: var(--color-additional);
     letter-spacing: 0.015em;
     margin: 210px 0 85px 85px;
 }
 .lineHead {
     text-decoration-line: overline;
     text-decoration-style: solid;
-    text-decoration-color: #111;
+    text-decoration-color: var(--color-additional);
 }
 .wrapper {
     height: 750px;
     width: 1265px;
-    background-color: #fefefe;
+    background-color: var(--color);
     display: flex;
     flex-direction: row;
     margin: 85px auto 260px;
@@ -43,7 +43,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    color: #111;
+    color: var(--color-additional);
     margin-bottom: 3px;
 }
 
@@ -69,7 +69,7 @@
 .card__block {
     width: 316px;
     height: 145px;
-    background-color: #111;
+    background-color: var(--color-additional);
     display: flex;
     justify-content: flex-end;
     transition: .5s;
@@ -103,4 +103,61 @@
     font-family: 'Ruda', sans-serif;
     font-size: 15px;
     margin: 20px;
+}
+
+
+/* Анимации для стрелочек */
+
+@keyframes swing {
+    30% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+
+    65% {
+        transform: translateY(2px);
+    }
+
+    80% {
+        transform: translateY(-1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes swing_reverse {
+    30% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    65% {
+        transform: translateY(-2px);
+    }
+
+    80% {
+        transform: translateY(1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.arr_down {
+    animation: swing 2s ease;
+    animation-iteration-count: infinite;
+}
+
+.arr_top {
+    animation: swing_reverse 2s ease;
+    animation-iteration-count: infinite;
 }

@@ -1,5 +1,5 @@
 .footer {
-    background-color: #000;
+    background-color: var(--color-additional);
     /* padding: 10px 0; */
     margin: 0;
     height: 100px;
@@ -14,12 +14,12 @@
 }
 
 .style_link {
-    color: #FFF;
+    color: var(--color);
     text-decoration: none;
 }
 
 .item {
-    color: #FFF;
+    color: var(--color);
     text-align: center;
     list-style-type: none;
     font-size: 16px;
@@ -43,26 +43,26 @@
 .item_box_left {
     width: 50%;
     border-right-style: solid;
-    border-right-color: #FFF;
+    border-right-color: var(--color);
     border-right-width: 1px;
 }
 
 .item_box_right {
     width: 50%;
     border-left-style: solid;
-    border-left-color: #FFF;
+    border-left-color: var(--color);
     border-left-width: 1px;
 }
 
 .languages_content {
     display: block;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--color);
 }
 
 .btn {
-    background-color: #000;
-    color: #FFF;
+    background-color: var(--color-additional);
+    color: var(--color);
     font-size: 16px;
     border: none;
     cursor: pointer;

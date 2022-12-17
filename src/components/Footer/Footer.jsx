@@ -2,6 +2,9 @@ import style from './style.module.css';
 import classnames from 'classnames';
 import logo from '../../images/logo1_white.svg';
 
+import { ThemeContext, themes } from '../../contexts/ThemeContext'
+
+
 export const Footer = () => {
     return (
         <footer className={style.footer}>
@@ -23,7 +26,18 @@ export const Footer = () => {
                             <button className={style.btn}>Язык</button>
                         </li>
                         <li className={style.item}>
-                            <button className={style.btn}>Тема</button>
+                            <ThemeContext.Consumer>
+                                {({ theme, setTheme }) => (
+                                    <button
+                                        className={style.btn}
+                                        onClick={() => {
+                                            if (theme === themes.light) setTheme(themes.dark)
+                                            if (theme === themes.dark) setTheme(themes.light)
+                                        }}
+                                        value={theme === themes.dark}
+                                    >Тема</button>
+                                )}
+                            </ThemeContext.Consumer>
                         </li>
                     </ul>
                 </li>
