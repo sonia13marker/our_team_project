@@ -1,6 +1,18 @@
+:root[data-theme="light"] {
+    --color: #FEFEFE;
+    --color-additional: #111;
+}
+
+:root[data-theme="dark"] {
+    --color: #111;
+    --color-additional: #FEFEFE;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    color: var(--color-additional);
+    background-color: var(--color);
 }

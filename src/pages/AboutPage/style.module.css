@@ -2,13 +2,13 @@
 
 .back {
     padding-top: 4rem;
-    background-color: #fefefe;
+    background-color: var(--color);
 }
 
 .about_header {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: #111;
+    color: var(--color-additional);
     font-size: 4rem;
     margin-left: 18%;
     margin-top: 3rem;

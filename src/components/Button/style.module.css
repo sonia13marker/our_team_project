@@ -1,18 +1,18 @@
 .btnWrapper {
     padding: 10px;
-    color: #FEFEFE;
+    color: var(--color);
     width: 300px;
-    background-color: #111;
+    background-color: var(--color-additional);
     cursor: pointer;
     transition: .5s;
 }
 
 .btnInner {
     padding: 14px;
-    border: 1px solid #FEFEFE;
+    border: 1px solid var(--color);
     text-align: center;
     font-size: 18px;
-    color:#FEFEFE;
+    color: var(--color);
 }
 
 .noDec {

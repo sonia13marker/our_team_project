@@ -11,7 +11,7 @@ export function AboutPage() {
         <AboutComp/>
         <SoftSkills/>
         <TechStack/>
-        <OurTeam />
-        <Footer />
+        <OurTeam/>
+        <Footer/>
     </div>
 }

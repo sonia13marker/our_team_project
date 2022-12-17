@@ -10,7 +10,7 @@
     font-family: 'Ruda', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #111;
+    color: var(--color-additional);
     padding: 0 37px;
     width: 55vw;
     text-align: justify;

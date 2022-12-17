@@ -4,14 +4,11 @@ import { Form } from '../../components/Form/Form';
 import { Footer } from '../../components/Footer/Footer';
 
 export function ContactsPage() {
-    return <div className={style.wrapper}>
-
-        <Map />
-        <Form />
-        <Footer />
-
-        
-    </div>
-
-
+    return (
+        <div className={style.wrapper}>
+            <Map />
+            <Form />
+            <Footer />
+        </div>
+    )
 }

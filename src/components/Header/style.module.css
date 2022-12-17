@@ -11,12 +11,13 @@
     display: flex;
     gap: 90px;
     height: 4rem;
+    background-color: var(--color);
 }
 
 .nav_elem {
     transition: box-shadow .5s;
     margin-top: auto;
-    color: #111;
+    color: var(--color-additional);
     text-decoration: none;
 }
 
