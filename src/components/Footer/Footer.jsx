@@ -12,7 +12,7 @@ export const Footer = () => {
                 </li>
                 <li className={classnames(style.item_box_center, style.item, style.item_box)}>
                     <ul className={style.row}>
-                        <li className={style.item}><a className={style.style_link} href="/#">О нас</a></li>
+                        <li className={style.item}><a className={style.style_link} href="/about">О нас</a></li>
                         <li className={style.item}><a className={style.style_link} href="/#">Портфолио</a></li>
                         <li className={style.item}><a className={style.style_link} href="/#">Контакты</a></li>
                     </ul>
