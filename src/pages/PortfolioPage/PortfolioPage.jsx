@@ -51,24 +51,26 @@ export function PortfolioPage() {
         setTags(parseAllTags());
     }, []);
 
-    return <div className={style.wrapper}>
+    return <>
+        <div className={style.wrapper}>
         <h1 className={style.projects_header}>проекты</h1>
-        <div className={style.projects_wrapper}>
-            <aside className={style.tags}>
-                <span className={style.tags__header}>Теги:</span>
-                <div className={style.tags_container}>
+            <div className={style.projects_wrapper}>
+                <aside className={style.tags}>
+                    <span className={style.tags__header}>Теги:</span>
+                    <div className={style.tags_container}>
+                        {
+                            Object.keys(tags).map((tag, idx) =>
+                                <Tag key={idx} tag={[tag, Object.values(tags)[idx]]}/>)
+                        }
+                    </div>
+                </aside>
+                <div className={style.projects_container}>
                     {
-                        Object.keys(tags).map((tag, idx) =>
-                            <Tag key={idx} tag={[tag, Object.values(tags)[idx]]}/>)
+                        projects.map((pr, idx) => <Project key={idx} project={pr}/> )
                     }
                 </div>
-            </aside>
-            <div className={style.projects_container}>
-                {
-                    projects.map((pr, idx) => <Project key={idx} project={pr}/> )
-                }
             </div>
         </div>
         <Footer/>
-    </div>
+    </>
 }
