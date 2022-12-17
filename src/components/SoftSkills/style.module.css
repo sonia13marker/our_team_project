@@ -40,10 +40,37 @@
 }
 
 .item {
+    position: relative;
     list-style-type: none;
     padding: 30px 110px;
     font-size: 20px;
     font-weight: 600;
     color: var(--color);
+}
 
+.animated_arrow {
+    transition: .3s;
+    height: 2px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    right: 110px;
+    bottom: 40px;
+}
+
+.animated_arrow_tip {
+    transition: .2s;
+    border-radius: 50px;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    position: absolute;
+    right: 306px;
+    bottom: 37px;
+}
+
+.active {
+    transition: .2s;
+    display: inline-block;
+    margin-right: 230px;
 }
