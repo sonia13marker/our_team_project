@@ -4,6 +4,9 @@ import {LeftPanel} from "../../components/LeftPanel/LeftPanel";
 import {ContactsPage} from '../ContactsPage/ContactsPage';
 
 export const MainPage = () => {
+
+
+    
     return (
         <>
             <div className={style.main_page}>

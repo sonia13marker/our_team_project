@@ -23,7 +23,7 @@ function Tag({tag}) {
 
     return <div className={style.tag}>
         <span>#{renderTag[0]}</span>
-        <span>{renderTag[1] === 1 ? "" : " " + renderTag[1]}</span>
+        <span>{renderTag[1] === 1 ? " 1" : " " + renderTag[1]}</span>
     </div>
 }
 
@@ -31,7 +31,7 @@ function Project({project}) {
     return <div className={style.project}>
         <div className={style.project__header}>
             <span>{project.author}</span>
-            <a href={project.link}>Смотреть<img src={arrow} alt="arrow"/></a>
+            <a href={project.link} target="_blank">Смотреть<img src={arrow} alt="arrow"/></a>
         </div>
         <div className={style.project__tags}>
             {
