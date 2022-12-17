@@ -1,7 +1,7 @@
 import style from "./style.module.css";
 import {Button} from "../../components/Button/Button";
 import {LeftPanel} from "../../components/LeftPanel/LeftPanel";
-import {Contacts} from '../../pages/Contacts/Contacts';
+import {ContactsPage} from '../ContactsPage/ContactsPage';
 
 export const MainPage = () => {
     return (
@@ -25,13 +25,6 @@ export const MainPage = () => {
                     <div className={style.image}></div>
                 </div>
             </div>
-            
-            <Contacts />
-            {/* перенести все это в AboutPage
-            <AboutComp/>
-            <SoftSkills/>
-            <TechStack></TechStack> 
-            <OurTeam /> */}
         </>
     )
 }

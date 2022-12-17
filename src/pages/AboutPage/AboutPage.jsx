@@ -1,8 +1,8 @@
 import {TechStack} from "../../components/TechStack/TechStack";
 import { SoftSkills } from "../../components/SoftSkills/SoftSkills";
-import {AboutComp} from '../../components/AboutComp/AboutComp';
+import { AboutComp } from '../../components/AboutComp/AboutComp';
 import style from './style.module.css';
-import {OurTeam} from '../../components/OurTeam/OurTeam';
+import { OurTeam } from '../../components/OurTeam/OurTeam';
 import { Footer } from "../../components/Footer/Footer";
 
 export function AboutPage() {
