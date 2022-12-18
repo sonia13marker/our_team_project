@@ -6,6 +6,7 @@ import { PortfolioPage } from "./pages/PortfolioPage/PortfolioPage";
 import { ContactsPage } from "./pages/ContactsPage/ContactsPage";
 import ThemeProvider from "./providers/ThemeProvider";
 
+
 export const App = () => {
     return (
         <ThemeProvider>
