@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ruda&display=swap');
 
 .container {
     position: relative;
@@ -10,11 +10,9 @@
 
 
 .background {
-    /* оставила без 'Ruda', хотя бы так работает, потому что
-    при 'Inter' та же фигня */
-    font-family: sans-serif;
+  
+    font-family: 'Inter', sans-serif;
     position: absolute;
-    overflow: hidden;
 
     height: 100%;
     width: 100%;

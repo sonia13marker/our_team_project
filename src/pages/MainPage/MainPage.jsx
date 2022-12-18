@@ -6,6 +6,7 @@ import {ColorImg} from "../../components/ColorImg/ColorImg";
 
 import img_white from "../../images/imgwhite.png";
 import img_dark from "../../images/imgblack.png";
+import { NotFound } from "../../components/NotFound/NotFound";
 
 export const MainPage = () => {
 
@@ -33,6 +34,7 @@ export const MainPage = () => {
                     <ColorImg className={style.image} src_white={img_white} src_dark={img_dark} alt="main img"/>
                 </div>
             </div>
+
         </>
     )
 }
