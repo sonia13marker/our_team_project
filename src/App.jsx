@@ -23,7 +23,7 @@ export const App = () => {
     })
     return (
         <>
-        {loader==true? 
+        {loader===true? 
                 <Loader show = {loader} type = "body"></Loader>:
                 <Loader  type = {<MainPage/>}></Loader>
         }
