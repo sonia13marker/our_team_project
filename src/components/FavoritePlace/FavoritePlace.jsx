@@ -2,7 +2,10 @@ import style from './style.module.css';
 
 export const FavoritePlace = () => {
     return <div className={style.wrapper}>
+        <div className={style.stroke_container}>
+            <hr className={style.stroke}/>
         <h2 className={style.wrapper__h2}>Наши любимые места </h2>
+        </div>
         <div className={style.wrapper__place}>
             <span className={style.place__city}>
                 <h3 className={style.place__h3}>Краснодар:</h3>

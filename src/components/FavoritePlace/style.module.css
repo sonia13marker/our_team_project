@@ -1,14 +1,37 @@
 .wrapper {
     width: 100vw;
     background-color: var(--color);
+    margin-top: 350px;
+}
+.stroke_container {
+
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
+.stroke {
+    display: block;
+    background-color: #111;
+    width: 45vw;
+    height: 5px;
+    border: none;
+    align-self: center;
+}
 .wrapper__h2 {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 3vw;
+    text-align: end;
+    margin-right: 150px;
+    text-transform: lowercase;
     color: var(--additional-color);
-    margin-left: 30px;
+    padding: auto;
 }
 
 .wrapper__place {

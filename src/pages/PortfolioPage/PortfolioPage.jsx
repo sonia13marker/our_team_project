@@ -3,6 +3,7 @@ import projects from "./projects";
 import arrow from "./arrow.svg";
 import {useEffect, useState} from "react";
 import {Footer} from "../../components/Footer/Footer";
+import { MenuHamburger } from "../../components/MenuHamburger/MenuHamburger";
 
 function parseAllTags() {
     let tags = {};
@@ -59,6 +60,7 @@ export function PortfolioPage() {
     }, []);
 
     return <>
+
         <div className={style.wrapper}>
         <h1 className={style.projects_header}>проекты</h1>
             <div className={style.projects_wrapper}>

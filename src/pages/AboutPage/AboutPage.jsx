@@ -5,6 +5,7 @@ import style from './style.module.css';
 import { OurTeam } from '../../components/OurTeam/OurTeam';
 import { Footer } from "../../components/Footer/Footer";
 import { FavoritePlace } from "../../components/FavoritePlace/FavoritePlace";
+import { MenuHamburger } from "../../components/MenuHamburger/MenuHamburger";
 
 export function AboutPage() {
     return <div className={style.back}>

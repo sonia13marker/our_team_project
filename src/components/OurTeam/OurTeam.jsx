@@ -5,6 +5,12 @@ import classnames from 'classnames';
 import React, {Component} from 'react';
 import "./style.css";
 
+//icons
+import tel from '../../images/telegram.svg';
+import git from '../../images/github.svg';
+import vk from '../../images/vk.svg';
+
+
 export class OurTeam extends Component {
     constructor(props){
         super(props);
@@ -28,49 +34,74 @@ export class OurTeam extends Component {
                     <div className={style.card} onMouseEnter={() => this.handleClick(this.card1, "showed")} onMouseLeave={() => this.handleClick(this.card1, "showed")}>
                         <p className={style.card__name}>Антон, 15 лет</p>
                         <p className={style.card__post}>Вёрстка</p>
-                        <span className={style.card__photo}></span>
+                        <span className={classnames(style.card__photo, style.ant)}>
+                        </span>
                         <span ref={this.card1} className={classnames(style.card__block)}>
                             <img src={arrow_down} className={style.arr_down} alt=""/>
                         </span>
                         <span className={classnames(style.card__info_block)}>
-                            <p className={style.card_info}>Технологии: Html5, Css3, React, Redux, Bootstrap, Python3, Flask, MongoDB, Sqlite3</p>
+                            <p className={style.card_info}><span className={style.weight}>Технологии:</span> HTML, CSS,  JavaScript, Python, React, Flask, Bootstrap</p>
+                            <span className={style.social}>
+                            <a href="https://t.me/x64penguin" target="blank"><img src={tel} alt="telegram"></img></a>
+                            <a href="https://github.com/x64penguin" target="blank"><img src={git} alt="github"></img></a> 
+                            <a href="/#" target="blank"><img src={vk} alt="vk" /></a>
+                            </span>
                         </span>
                     </div>
                 </div>
                 <div className={style.card} onMouseEnter={() => this.handleClick(this.card2, "showed")} onMouseLeave={() => this.handleClick(this.card2, "showed")}>
                     <p className={style.card__name}>Наиль, 16 лет</p>
                     <p className={style.card__post}>Вёрстка, анимации</p>
-                    <span className={style.card__photo}></span>
+                    <span className={classnames(style.card__photo, style.nail)}></span>
                     <span ref={this.card2} className={classnames(style.card__block)}>
                         <img src={arrow_top} className={style.arr_top} alt=""/>
                     </span>
                     <span className={classnames(style.card__info_block)}>
-                        <p className={style.card_info}>Технологии: Html5, Css3, React, Redux, Bootstrap, Python3, Flask, MongoDB, Sqlite3</p>
+                        <p className={style.card_info}><span className={style.weight}>Технологии:</span> Html5, Css3, React, Redux, Bootstrap, Python3, Flask, MongoDB, Sqlite3</p>
+                        <span className={style.social}>
+                            <a href="https://t.me/mdaamn" target="blank"> <img src={tel} alt="telegram"></img></a>
+                            <a href="https://github.com/NailGilmanov" target="blank"><img src={git} alt="github"></img></a> 
+                            <a href="/#" target="blank"><img src={vk} alt="vk"/></a>
                     </span>
+                    </span>
+                    
                 </div>
                 <div className={style.card_down}>
                     <div className={style.card} onMouseEnter={() => this.handleClick(this.card3, "showed")} onMouseLeave={() => this.handleClick(this.card3, "showed")}>
                     <p className={style.card__name}>Руслан, 18 лет</p>
                         <p className={style.card__post}>Вёрстка, адаптация</p>
-                        <span className={style.card__photo}></span>
+                        <span className={classnames(style.card__photo, style.rus)}></span>
                         <span ref={this.card3} className={classnames(style.card__block)}>
                             <img src={arrow_down} className={style.arr_down} alt=""/>
                         </span>
                         <span className={classnames(style.card__info_block)}>
-                            <p className={style.card_info}>Технологии: Html5, Css3, React, Redux, Bootstrap, Python3, Flask, MongoDB, Sqlite3</p>
+                            <p className={style.card_info}><span className={style.weight}>Технологии:</span> Python3, Django, AIOHttp, FastAPI, Flask, JavaScript, PyScript, Bootstrap, Tortoise ORM</p>
+                            <span className={style.social}>
+                            <a href="https://t.me/Gruslans" target="blank"> <img src={tel} alt="telegram"></img></a>
+                            <a href="https://github.com/GRusl" target="blank"><img src={git} alt="github"></img></a> 
+                            <a href="/#" target="blank"><img src={vk} alt="vk"/></a>
                         </span>
+                        </span>
+                       
+
                     </div>
                 </div>
                 <div className={style.card} onMouseEnter={() => this.handleClick(this.card4, "showed")} onMouseLeave={() => this.handleClick(this.card4, "showed")}>
                 <p className={style.card__name}>Софья, 18 лет</p>
                     <p className={style.card__post}>Лидер, дизайн</p>
-                    <span className={style.card__photo}></span>
+                    <span className={classnames(style.card__photo, style.son)}></span>
                     <span ref={this.card4} className={classnames(style.card__block)}>
                         <img src={arrow_top} className={style.arr_top} alt=""/>
                     </span>
                     <span className={classnames(style.card__info_block)}>
-                        <p className={style.card_info}>Технологии: Html5, Css3, React, Redux, Bootstrap, Python3, Flask, MongoDB, Sqlite3</p>
+                        <p className={style.card_info}><span className={style.weight}>Технологии:</span> HTML5, CSS3, React, JavaScript, SCSS, Figma, WordPress</p>
+                        <span className={style.social}>
+                            <a href="https://t.me/username_marker" target="blank"> <img src={tel} alt="telegram"></img></a>
+                            <a href="https://github.com/sonia13marker?tab=repositories" target="blank"><img src={git} alt="github"></img></a> 
+                            <a href="https://vk.com/mmarkerr" target="blank"><img src={vk} alt="vk"/></a>
+                        </span>
                     </span>
+                    
                 </div>
             </span>
         </div>
