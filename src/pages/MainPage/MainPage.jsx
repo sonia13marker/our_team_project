@@ -1,17 +1,12 @@
 import style from "./style.module.css";
 import {Button} from "../../components/Button/Button";
 import {LeftPanel} from "../../components/LeftPanel/LeftPanel";
-import {ContactsPage} from '../ContactsPage/ContactsPage';
 import {ColorImg} from "../../components/ColorImg/ColorImg";
 
 import img_white from "../../images/imgwhite.png";
 import img_dark from "../../images/imgblack.png";
-import { NotFound } from "../../components/NotFound/NotFound";
 
 export const MainPage = () => {
-
-
-    
     return (
         <>
             <div className={style.main_page}>

@@ -38,6 +38,7 @@
     border: 1px solid var(--color-additional);
     border-radius: 15px 15px 15px 0;
     padding: 6px;
+    transition: border .25s, background-color .25s;
 }
 
 .tag > span {
@@ -48,6 +49,16 @@
 
 .tag > span:nth-child(2) {
     color: rgb(120, 120, 120);
+}
+
+.tags .tag {
+    cursor: pointer;
+}
+
+.tag_active {
+    background-color: var(--color-additional);
+    border: 1px solid var(--color);
+    color: var(--color);
 }
 
 .tags_container {
@@ -70,7 +81,6 @@
     border-right: 1px solid var(--color-additional);
     font-family: "Ruda", sans-serif;
     border-bottom: 1px solid var(--color-additional);
-    padding-bottom: 2rem;
 }
 
 .project__header {
@@ -115,6 +125,7 @@
     object-fit: cover;
     filter: saturate(0);
     transition: filter .3s ease-in-out;
+    will-change: filter;
 }
 
 .project__image:hover {
