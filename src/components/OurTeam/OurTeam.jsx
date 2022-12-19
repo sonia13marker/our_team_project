@@ -3,6 +3,7 @@ import arrow_down from '../../images/arrow_down.svg';
 import arrow_top from '../../images/arrow_top.svg';
 import classnames from 'classnames';
 import React, {Component} from 'react';
+import "./style.css";
 
 export class OurTeam extends Component {
     constructor(props){
@@ -24,7 +25,7 @@ export class OurTeam extends Component {
             </h3>
             <span className={style.wrapper}>
                 <div className={style.card_down}>
-                    <div className={style.card} onMouseEnter={() => this.handleClick(this.card1, "style_showed__T8XZj")} onMouseLeave={() => this.handleClick(this.card1, "style_showed__T8XZj")}>
+                    <div className={style.card} onMouseEnter={() => this.handleClick(this.card1, "showed")} onMouseLeave={() => this.handleClick(this.card1, "showed")}>
                         <p className={style.card__name}>Антон, 15 лет</p>
                         <p className={style.card__post}>Вёрстка</p>
                         <span className={style.card__photo}></span>
@@ -36,7 +37,7 @@ export class OurTeam extends Component {
                         </span>
                     </div>
                 </div>
-                <div className={style.card} onMouseEnter={() => this.handleClick(this.card2, "style_showed__T8XZj")} onMouseLeave={() => this.handleClick(this.card2, "style_showed__T8XZj")}>
+                <div className={style.card} onMouseEnter={() => this.handleClick(this.card2, "showed")} onMouseLeave={() => this.handleClick(this.card2, "showed")}>
                     <p className={style.card__name}>Наиль, 16 лет</p>
                     <p className={style.card__post}>Вёрстка, анимации</p>
                     <span className={style.card__photo}></span>
@@ -48,7 +49,7 @@ export class OurTeam extends Component {
                     </span>
                 </div>
                 <div className={style.card_down}>
-                    <div className={style.card} onMouseEnter={() => this.handleClick(this.card3, "style_showed__T8XZj")} onMouseLeave={() => this.handleClick(this.card3, "style_showed__T8XZj")}>
+                    <div className={style.card} onMouseEnter={() => this.handleClick(this.card3, "showed")} onMouseLeave={() => this.handleClick(this.card3, "showed")}>
                     <p className={style.card__name}>Руслан, 18 лет</p>
                         <p className={style.card__post}>Вёрстка, адаптация</p>
                         <span className={style.card__photo}></span>
@@ -60,7 +61,7 @@ export class OurTeam extends Component {
                         </span>
                     </div>
                 </div>
-                <div className={style.card} onMouseEnter={() => this.handleClick(this.card4, "style_showed__T8XZj")} onMouseLeave={() => this.handleClick(this.card4, "style_showed__T8XZj")}>
+                <div className={style.card} onMouseEnter={() => this.handleClick(this.card4, "showed")} onMouseLeave={() => this.handleClick(this.card4, "showed")}>
                 <p className={style.card__name}>Софья, 18 лет</p>
                     <p className={style.card__post}>Лидер, дизайн</p>
                     <span className={style.card__photo}></span>
