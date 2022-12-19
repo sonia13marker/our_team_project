@@ -4,7 +4,7 @@
     position: absolute;
     color: var(--color-additional);
     background-color: var(--color);
-    border-right: 1px solid black;
+    border-right: 1px solid var(--color-additional);
     display: grid;
     grid-template-columns: 1fr;
 }

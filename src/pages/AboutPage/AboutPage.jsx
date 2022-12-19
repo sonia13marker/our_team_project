@@ -4,6 +4,7 @@ import { AboutComp } from '../../components/AboutComp/AboutComp';
 import style from './style.module.css';
 import { OurTeam } from '../../components/OurTeam/OurTeam';
 import { Footer } from "../../components/Footer/Footer";
+import { FavoritePlace } from "../../components/FavoritePlace/FavoritePlace";
 
 export function AboutPage() {
     return <div className={style.back}>
@@ -12,6 +13,7 @@ export function AboutPage() {
         <SoftSkills/>
         <TechStack/>
         <OurTeam/>
+        <FavoritePlace/>
         <Footer/>
     </div>
 }

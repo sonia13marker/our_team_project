@@ -1,9 +1,9 @@
-import { Header } from '../Header/Header'
+// import { Header } from '../Header/Header'
 // import { Footer } from '../Footer/Footer'
 
 export const Layout = (props) => {
     return <div>
-        <Header />
+        {/* <Header /> */}
         <main>
             { props.children }
         </main>
