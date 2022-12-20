@@ -77,3 +77,26 @@
     filter: saturate(0) brightness(1) invert(.8);
     margin: 70px 0 150px;
 }
+@media screen and (max-width: 780px) {
+    .wrapper__h2 {
+        font-size: 30px;
+    }
+    .stroke {
+        display: block;
+        width: 30vw;
+        height: 5px;
+        border: none;
+        align-self: center;
+        background-color: var(--color-additional);
+    }
+    .place__ul {
+        font-size: 15px;
+    }
+    .place__h3 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+
+    
+}

@@ -44,7 +44,7 @@ export class OurTeam extends Component {
                             <span className={style.social}>
                             <a href="https://t.me/x64penguin" target="blank"><img src={tel} alt="telegram"></img></a>
                             <a href="https://github.com/x64penguin" target="blank"><img src={git} alt="github"></img></a> 
-                            <a href="/#" target="blank"><img src={vk} alt="vk" /></a>
+                            <a href="https://vk.com/x64penguin" target="blank"><img src={vk} alt="vk" /></a>
                             </span>
                         </span>
                     </div>
@@ -61,7 +61,7 @@ export class OurTeam extends Component {
                         <span className={style.social}>
                             <a href="https://t.me/mdaamn" target="blank"> <img src={tel} alt="telegram"></img></a>
                             <a href="https://github.com/NailGilmanov" target="blank"><img src={git} alt="github"></img></a> 
-                            <a href="/#" target="blank"><img src={vk} alt="vk"/></a>
+                            <a href="https://vk.com/iglobglogabgalab" target="blank"><img src={vk} alt="vk"/></a>
                     </span>
                     </span>
                     
@@ -79,7 +79,7 @@ export class OurTeam extends Component {
                             <span className={style.social}>
                             <a href="https://t.me/Gruslans" target="blank"> <img src={tel} alt="telegram"></img></a>
                             <a href="https://github.com/GRusl" target="blank"><img src={git} alt="github"></img></a> 
-                            <a href="/#" target="blank"><img src={vk} alt="vk"/></a>
+                            <a href="https://vk.com/galeev.ruslan" target="blank"><img src={vk} alt="vk"/></a>
                         </span>
                         </span>
                        

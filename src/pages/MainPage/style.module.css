@@ -1,6 +1,4 @@
-/* поменять бэк у всей страницы на ВОТ ЭТОТ БЕЛЫЙ * {
-    background-color: #fefefe;
-} */
+
 h1 {
     margin: 0;
     padding: 0;
@@ -18,10 +16,6 @@ h1 {
 .image {
     height: 100vh;
     width: 100%;
-
-    /*
-    background-image: url("https://sun9-north.userapi.com/sun9-79/s/v1/ig2/POxLrqMXw3Glga4JguF74-dUXkrn_RubPav7uMnhjtcQ82zdMj-ho5Zkf_eJGadSxzfX6qkRhABga42LCzGN1pjJ.jpg?size=1440x2160&quality=95&type=album");
-    */
 }
 
 .contentSide {
@@ -77,4 +71,53 @@ h1 {
 
 .changeBtn {
     cursor: pointer;
+}
+
+@media screen and (max-width:1280px) {
+    .changeBtns {
+        right: 45vw;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .changeBtns {
+        font-size: 15px;
+    }
+    .headingTitle1 {
+        font-size: 7vw;
+    }
+    .headingTitle1Stroke1 {
+        font-size: 7vw;
+    }
+    .infoBlock {
+        font-size: 30px;
+    }
+   
+}
+
+@media screen and (max-width:780px) {
+    .infoBlock > p > span {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .headingTitle1Stroke1 {
+        top: 23px;
+    }
+    
+    .infoBlock {
+        font-size: 25px;
+    }
+    .changeBtns {
+        right: 34vw;
+    }
+    .image {
+        height: 100vh;
+        width: 150%;
+    }
+
+}
+
+@media screen and (max-width:780px) {
+    
 }

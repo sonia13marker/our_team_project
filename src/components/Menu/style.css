@@ -3,7 +3,7 @@
     height: 100vh;
     top: 0;
     transition: all 0.2s;
-    transform: translateX(-100%);
+    transform: translateX(-200%);
 }
 
 .menu.active {
@@ -84,7 +84,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    margin-left: 500px;
+    margin-left: 300px;
     align-self: flex-end;
 
 }

@@ -206,3 +206,38 @@
     animation: swing_reverse 2s ease;
     animation-iteration-count: infinite;
 }
+/*ДОДЕЛАТЬ*/
+@media screen and (max-width:1024px) {
+    .card {
+        height: 600px;
+        width: 260px;
+    }
+    .card__photo {
+        width: 260px;
+        height: 290px;
+    }
+    .card__block {
+    width: 260px;
+    
+    }
+    .card__info_block {
+        width: 260px;
+
+    }
+    .card_info {
+        padding: 10px;
+    }
+    .card__name {
+        font-size: 15px;
+    }
+    .card__post {
+        font-size: 15px;
+        margin: 5px 0 10px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .head_text {
+        width: 750px;
+    }
+    
+}

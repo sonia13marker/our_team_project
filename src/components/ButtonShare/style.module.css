@@ -8,3 +8,15 @@
     cursor: pointer;
     transition: 0.5s;
 }
+
+@media screen and (max-width:1024px) {
+    .share {
+        height: 120px;
+    }
+}
+@media screen and (max-width:780px) { 
+    .share {
+        width: 19px;
+        height: 125px;
+    }
+}

@@ -72,3 +72,21 @@
     display: inline-block;
     margin-right: 230px;
 }
+
+@media screen and (max-width: 1024px) {
+    .background {
+    font-size: 12.5vw;
+    }
+    
+}
+@media screen  and (max-width: 780px) {
+    
+.item {
+    padding: 30px 0;
+    font-size: 25px;
+}
+.content {
+    padding: 30px;
+}
+    
+}
