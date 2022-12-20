@@ -115,3 +115,23 @@ input[type=radio] {
 .red {
     color: #e1271d;
 }
+
+@media screen and (max-width: 780px) {
+    .input_1 {
+        width: 70vw;
+    
+    }
+    .form {
+        width: 70vw;
+    }
+    .input_2 {
+        width: 30vw;
+    }
+    .two_form {
+        gap: 4.5vw;
+    }
+    
+.btnWrapper {
+   margin: 0 auto;
+}
+}
