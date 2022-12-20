@@ -4,20 +4,7 @@ import arrow from "./arrow.svg";
 import {useEffect, useState} from "react";
 import {Footer} from "../../components/Footer/Footer";
 import { MenuHamburger } from "../../components/MenuHamburger/MenuHamburger";
-
-function parseAllTags() {
-    let tags = {};
-    projects.forEach(value => {
-        value.tags.forEach(tag => {
-            if (tags[tag] === undefined) {
-                tags[tag] = 1;
-            } else {
-                tags[tag]++;
-            }
-        });
-    });
-    return tags;
-}
+import classnames from "classnames";
 
 function Tag({tag, active, onChange}) {
     const renderTag = typeof tag === "string" ? [tag, ""] : tag
@@ -51,13 +38,20 @@ function Project({project}) {
     </div>
 }
 
+function SeeMoreButton() {
+    return <button className={style.see_more}>Посмотреть еще</button>
+}
+
 export function PortfolioPage() {
     const [tags, setTags] = useState({});
     const [activeTags, setActiveTags] = useState({});
+    const [maxIndex, setMaxIndex] = useState(4);
 
     useEffect(() => {
         setTags(parseAllTags());
     }, []);
+
+    const filteredProjects = filterByTags(activeTags, projects);
 
     return <>
         <MenuHamburger/>
@@ -78,15 +72,41 @@ export function PortfolioPage() {
                         }
                     </div>
                 </aside>
-                <div className={style.projects_container}>
-                    {
-                        filterByTags(activeTags, projects).map((pr, idx) => <Project key={idx} project={pr}/> )
-                    }
+                <div className={style.project_list_wrapper}>
+                    <div className={style.projects_container}>
+                        {
+                            filteredProjects.map((pr, idx) => {
+                                if (idx >= maxIndex) {
+                                    return null;
+                                }
+                                return <Project key={idx} project={pr}/>
+                            })
+                        }
+                    </div>
+                    <div
+                        className={classnames({[style.see_more__wrapper]: true, [style.see_more_hidden]: maxIndex >= filteredProjects.length})}
+                        onClick={() => setMaxIndex(maxIndex + 4)}>
+                        <SeeMoreButton/>
+                    </div>
                 </div>
             </div>
         </div>
         <Footer/>
     </>
+}
+
+function parseAllTags() {
+    let tags = {};
+    projects.forEach(value => {
+        value.tags.forEach(tag => {
+            if (tags[tag] === undefined) {
+                tags[tag] = 1;
+            } else {
+                tags[tag]++;
+            }
+        });
+    });
+    return tags;
 }
 
 function anyTagsActive(tags) {
