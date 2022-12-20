@@ -131,3 +131,30 @@
 .project__image:hover {
     filter: saturate(1);
 }
+
+.project_list_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.see_more__wrapper {
+    margin: 2rem auto;
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    background: var(--color-additional);
+}
+
+.see_more {
+    padding: 1rem 2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--color);
+    background: var(--color-additional);
+    color: var(--color);
+}
+
+.see_more_hidden {
+    display: none;
+}
