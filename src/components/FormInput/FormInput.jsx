@@ -2,7 +2,11 @@ import { useForm } from 'react-hook-form';
 import style from './style.module.css';
 import classnames from 'classnames';
 
+import { useTranslation } from "react-i18next";
+
 export const FormInput = () => {
+    const { t } = useTranslation();
+
     const {
         register,
         handleSubmit,
@@ -20,18 +24,18 @@ export const FormInput = () => {
       return <div>
         <form onSubmit={handleSubmit(onSubmit)} className={style.form}>
         <label className={style.label}>
-            Имя, фамилия: <span className={style.red}>*</span><br />
-            <input className={style.input_1} placeholder="Введите имя" {...register("firstName", {
-                required: 'Поле обязательно к заполнению',
+            {t("name_surname")} <span className={style.red}>*</span><br />
+            <input className={style.input_1} placeholder={t("placeholder1")} {...register("firstName", {
+                required: t("required1"),
                 minLength: {
                     value: 2,
-                    message: "Неправильно введено имя!"
+                    message: t("message1")
                 },
             })} 
             />
         </label>
         <span className={style.errors}>
-            {errors?.firstName && <p>{errors?.firstName?.message || "Ошибка!"}</p>}
+            {errors?.firstName && <p>{errors?.firstName?.message || t("error")}</p>}
         </span>
 
             <div className={style.two_form}>
@@ -39,61 +43,61 @@ export const FormInput = () => {
                 <label className={style.label}>
                 E-mail: <span className={style.red}>*</span> <br />
                 <input className={style.input_2} placeholder="hello123@mail.ru" {...register("eMail", {
-                    required: 'Поле обязательно к заполнению',
+                    required: t("required1"),
                    
                         //доделать!
                         pattern: "@",
-                        message: "Неправильно введен e-mail!",
+                        message: t("message2"),
                 })} 
                 />
                 </label>
             <div className={style.errors}>
-                {errors?.eMail && <p>{errors?.eMail?.message || "Ошибка!"}</p>}
+                {errors?.eMail && <p>{errors?.eMail?.message || t("error")}</p>}
             </div>
 
 
             <label className={style.label}>
-                Телефон: <span className={style.red}>*</span><br />
+                {t("phone_number")} <span className={style.red}>*</span><br />
                 <input className={style.input_2} placeholder="+7 (***) *** - ** - **" {...register("phoneNumber", {
-                    required: 'Поле обязательно к заполнению',
+                    required: t("required1"),
                         max: 22,
                         min: {
                             value: 11,
-                            message: "Неправильно введен номер телефона!"
+                            message: t("message3")
                         },
                         
                 })} 
                 />
                 </label>
             <div className={style.errors}>
-                {errors?.phoneNumber && <p>{errors?.phoneNumber?.message || "Ошибка!"}</p>}
+                {errors?.phoneNumber && <p>{errors?.phoneNumber?.message || t("error")}</p>}
             </div>
             </div>
 
             <label className={style.label}>
-                Сообщение: <br />
-                <input className={style.input_1} placeholder="Введите ваше сообщение" {...register("messages", {
+                {t("message_message")} <br />
+                <input className={style.input_1} placeholder={t("placeholder2")} {...register("messages", {
                     maxLength: {
                         value: 300,
-                        message: "Вы привысили размер сообщения (максимум - 300 символов)"
+                        message: t("message4")
                     },
                 })} 
                 />
                 </label>
             <div className={style.errors}>
-                {errors?.messages && <p>{errors?.messages?.message || "Ошибка!"}</p>}
+                {errors?.messages && <p>{errors?.messages?.message || t("error")}</p>}
             </div>
 
 
             <label className={style.radio_text}>
                 <input className={style.input_3} type="radio" name="accept" value="yes" {...register("radio", {
-                       required: "Обязательно для заполнения",
-                       message: "Вы не дали согласие на обработку данных ", 
+                       required: t("required1"),
+                       message: t("message5"), 
                 })} 
-                /> Я даю свое согласие на обработку персональных данных
+                /> {t("agree")}
                 </label>
             <div className={style.errors}>
-                {errors?.radio && <p>{errors?.radio?.message || "Ошибка!"}</p>}
+                {errors?.radio && <p>{errors?.radio?.message || t("error")}</p>}
             </div>
 
         <div className={style.btnWrapper}>

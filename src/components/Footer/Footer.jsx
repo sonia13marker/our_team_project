@@ -4,8 +4,15 @@ import logo from '../../images/logo1_white.svg';
 
 import { ThemeContext, themes } from '../../contexts/ThemeContext'
 
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang)
+    }
+
     return (
         <footer className={style.footer}>
             <ul className={style.row}>
@@ -15,15 +22,18 @@ export const Footer = () => {
                 </li>
                 <li className={classnames(style.item_box_center, style.item, style.item_box)}>
                     <ul className={style.row}>
-                        <li className={style.item}><a className={style.style_link} href="/about">О нас</a></li>
-                        <li className={style.item}><a className={style.style_link} href="/portfolio">Портфолио</a></li>
-                        <li className={style.item}><a className={style.style_link} href="/contacts">Контакты</a></li>
+                        <li className={style.item}><a className={style.style_link} href="/about">{t("nav_about")}</a></li>
+                        <li className={style.item}><a className={style.style_link} href="/portfolio">{t("nav_portfolion")}</a></li>
+                        <li className={style.item}><a className={style.style_link} href="/contacts">{t("nav_contacts")}</a></li>
                     </ul>
                 </li>
                 <li className={classnames(style.item_box_right, style.item, style.item_box)}>
                     <ul className={style.row}>
                         <li className={style.item}>
-                            <button className={style.btn}>Язык</button>
+                            <button className={style.btn} onClick={() => changeLanguage('ru')}>RU</button>
+                        </li>
+                        <li className={style.item}>
+                            <button className={style.btn} onClick={() => changeLanguage('en')}>EN</button>
                         </li>
                         <li className={style.item}>
                             <ThemeContext.Consumer>
@@ -35,7 +45,7 @@ export const Footer = () => {
                                             if (theme === themes.dark) setTheme(themes.light)
                                         }}
                                         value={theme === themes.dark}
-                                    >Тема</button>
+                                    >{t("theme_btn")}</button>
                                 )}
                             </ThemeContext.Consumer>
                         </li>

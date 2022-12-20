@@ -1,28 +1,32 @@
 import style from './style.module.css';
 
+import { useTranslation } from "react-i18next";
+
 export const Map = () => {
+    const { t } = useTranslation();
+
     return <div className={style.wrapper__map}>
     <span className={style.wrapper__h3}>
-        <h3>где мы находимся?</h3>
+        <h3>{t("where_are_we")}</h3>
     </span>
     <div className={style.wrapper__block}>
         <span className={style.container}>
             <h4 className={style.block__header}>
-                Адрес:
+                {t("adress")}
             </h4>
             <p className={style.block__text}>
-                м. Парк культуры, ул. Льва Толстого, 16 
+                {t("adress_of_place")}
             </p>
 
             <h4 className={style.block__header}>
-                Телефон:
+                {t("phone")}
             </h4>
             <p className={style.block__text}>
                 +7 495 739-70-006  
             </p>
 
             <h4 className={style.block__header}>
-                Факс:
+                {t("fax")}
             </h4>
             <p className={style.block__text}>
                 +7 495 739-70-70
