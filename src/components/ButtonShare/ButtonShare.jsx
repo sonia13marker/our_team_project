@@ -25,7 +25,6 @@ export const ButtonShare = () => {
         //     <button onClick={copy}>{!copied ? "Поделиться" : "Скопировано!"}</button>
         // </div>
         <div>
-            {/* <h1>Web Share - GeeksforGeeks</h1> */}
       <RWebShare
         data={{
           text: "WebClick - креативное агенство по созданию веб-сайтов",

@@ -8,7 +8,10 @@ import { FavoritePlace } from "../../components/FavoritePlace/FavoritePlace";
 import { MenuHamburger } from "../../components/MenuHamburger/MenuHamburger";
 
 export function AboutPage() {
-    return <div className={style.back}>
+    return (
+        <>
+        <MenuHamburger/>
+    <div className={style.back}>
         <h1 className={style.about_header}>О нас</h1>
         <AboutComp/>
         <SoftSkills/>
@@ -17,4 +20,5 @@ export function AboutPage() {
         <FavoritePlace/>
         <Footer/>
     </div>
+    </>)
 }
