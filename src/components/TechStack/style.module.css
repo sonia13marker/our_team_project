@@ -77,7 +77,7 @@
     position: absolute;
     word-spacing: 4rem;
     letter-spacing: 0.025em;
-    color: var(--color-additional);
+    color: var(--light-gray);
     font-family: 'Ruda', sans-serif;
     font-style: normal;
     font-weight: 600;

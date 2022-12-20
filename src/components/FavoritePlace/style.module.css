@@ -35,6 +35,7 @@
 }
 
 .wrapper__place {
+    margin-top: 50px;
     width: 100%;
     height: 300px;
     display: flex;
@@ -74,5 +75,5 @@
     display: block;
     width: 100vw;
     filter: saturate(0) brightness(1) invert(.8);
-    margin: 100px 0;
+    margin: 70px 0 150px;
 }
