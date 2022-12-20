@@ -13,8 +13,8 @@
     font-weight: 400;
     font-size: 5vw;
     line-height: 103px;
-    color: #fefefe;
-    -webkit-text-stroke: 1px #111;
+    color: var(--color);
+    -webkit-text-stroke: 1px var(--additional-color);
 }
 h3 {
     margin: 0;
@@ -29,7 +29,7 @@ h3 {
 .wrapper__block {
     width: 500px;
     height: 730px;
-    background-color: #111;
+    background-color: var(--additional-color);
     position: absolute;
     right:75px;
     top: 50px;
@@ -51,7 +51,7 @@ h3 {
     font-size: 20px;
     letter-spacing: 0.015em;
     text-transform: lowercase;
-    color: #fefefe;
+    color: var(--color);
 
 }
 
@@ -60,5 +60,5 @@ h3 {
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 0.015em;
-    color: #fefefe;
+    color: var(--color);
 }

@@ -50,7 +50,7 @@
     transition: 1s;
     height: 2px;
     width: 200px;
-    background-color: #fefefe;
+    background-color: var(--color);
     position: absolute;
     right: 110px;
     bottom: 40px;
@@ -61,7 +61,7 @@
     border-radius: 50px;
     height: 8px;
     width: 8px;
-    background-color: #fefefe;
+    background-color: var(--color);
     position: absolute;
     right: 306px;
     bottom: 37px;

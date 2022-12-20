@@ -17,7 +17,7 @@
 
 .stroke {
     display: block;
-    background-color: #111;
+    background-color: var(--additional-color);
     width: 45vw;
     height: 5px;
     border: none;
