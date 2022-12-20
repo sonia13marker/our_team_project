@@ -1,0 +1,115 @@
+.form {
+    width: 60vw;
+    height: 60vh;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 230px;
+}
+
+.label {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: var(--color-additional);
+}
+
+.input_1 {
+    font-family: 'Ruda', sans-serif;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 35vw;
+    height: 5vh;
+    border: none;
+    border-left: 1px solid var(--color-additional);
+    border-bottom: 1px solid var(--color-additional);
+    margin-bottom: 40px;
+    margin-top: 15px;
+
+}
+
+.two_form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+}
+
+.input_2 {
+    font-family: 'Ruda', sans-serif;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 15vw;
+    height: 5vh;
+    border: none;
+    border-left: 1px solid var(--color-additional);
+    border-bottom: 1px solid var(--color-additional);
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+input:focus {
+    opacity: 0.3;
+}
+
+.btnWrapper {
+    padding: 10px;
+    color: var(--color);
+    width: 300px;
+    background-color: var(--color-additional);
+    cursor: pointer;
+    transition: .5s;
+}
+.submit {
+    background-color: var(--color-additional);
+    border: none;
+}
+
+.btnInner {
+    padding: 14px;
+    width: 300px;
+    border: 1px solid var(--color);
+    text-align: center;
+    font-size: 18px;
+    color: var(--color);
+}
+.btnInner, .submit, .btnWrapper:hover {
+    cursor: pointer;
+}
+.btnInner, .submit, .btnWrapper:active {
+    cursor: pointer;
+}
+
+.errors {
+    color:#e1271d;
+    margin:0;
+    padding: 0;
+}
+.radio_text {
+    font-family: 'Ruda';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.015em;
+    color: var(--color-additional);
+    margin-bottom: 70px;
+}
+
+input[type=radio] {
+    border: 1px solid var(--color-additional);
+    padding: 0.5em;
+    -webkit-appearance: none;
+}
+
+  input[type=radio]:checked {
+    background: url('../../images//square.svg') no-repeat center center;
+    background-size: 9px 9px;
+}
+
+.red {
+    color: #e1271d;
+}

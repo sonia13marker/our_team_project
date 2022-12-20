@@ -5,7 +5,7 @@
     position: relative;
 }
 
-.wrapper__h3 {
+.wrapper__h3 {  
     margin: 0;
     padding: 0;
     /*'Inter',*/
@@ -15,6 +15,10 @@
     line-height: 103px;
     color: #fefefe;
     -webkit-text-stroke: 1px #111;
+}
+h3 {
+    margin: 0;
+    padding: 0;
 }
 
 /*делаем карту черно-белой*/
@@ -28,7 +32,7 @@
     background-color: #111;
     position: absolute;
     right:75px;
-    top: 140px;
+    top: 50px;
     z-index: 2;
 }
 

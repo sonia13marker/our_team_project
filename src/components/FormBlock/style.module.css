@@ -1,0 +1,28 @@
+.wrapper__form {
+    margin-top: 400px;
+}
+
+.wrapper__h2 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 600;
+    font-size: 6.5vw;
+    line-height: 110px;
+    letter-spacing: 0.015em;
+    text-transform: lowercase;
+    color: var(--color-additional);
+    margin-left: 75px;
+    text-transform: lowercase;
+    margin-bottom: 0;
+}
+
+.wrapper__text {
+    font-family: 'Ruda';
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 24px;
+    letter-spacing: 0.095em;
+    text-transform: lowercase;
+    color: var(--color-additional);
+    margin-left: 75px;
+    margin-bottom: 80px;
+}
