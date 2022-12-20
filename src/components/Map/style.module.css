@@ -1,5 +1,4 @@
 .wrapper__map {
-    margin-top: 90px;
     height: 70vh;
     margin-top: 130px;
     position: relative;
@@ -61,4 +60,54 @@ h3 {
     font-size: 18px;
     letter-spacing: 0.015em;
     color: var(--color);
+}
+
+@media screen and (max-width: 1280px) {
+    
+.wrapper__block {
+    right:25px;
+}
+}
+
+@media screen and (max-width: 1024px){
+    .wrapper__h3 {  
+        font-size: 48px;
+    }
+    
+     .wrapper__block {
+        width: 450px;
+        height: 645px;
+        right:25px;
+    }
+    .container {
+        margin: 60px 0 60px 50px;
+
+    }
+    iframe {
+     height: 550px;
+    }
+}
+
+@media screen  and (max-width: 780px) {
+    iframe {
+        height: 430px;
+    }
+
+       
+    .wrapper__block {
+        width: 100vw;
+        height: 780px;
+        left: 0;
+        top: 532px;
+        z-index: 2;
+}
+
+.container {
+    width: 400px;
+    height: 410px;
+    margin: 15% auto;
+    display: flex;
+    flex-direction: column;
+}
+
 }
