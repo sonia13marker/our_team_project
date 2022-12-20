@@ -17,11 +17,11 @@
 
 .stroke {
     display: block;
-    background-color: var(--additional-color);
     width: 45vw;
     height: 5px;
     border: none;
     align-self: center;
+    background-color: var(--color-additional);
 }
 .wrapper__h2 {
     font-family: 'Inter', sans-serif;
@@ -30,7 +30,7 @@
     text-align: end;
     margin-right: 150px;
     text-transform: lowercase;
-    color: var(--additional-color);
+    color: var(--color-additional);
     padding: auto;
 }
 
@@ -49,7 +49,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 2vw;
-    color: var(--additional-color);
+    color: var(--color-additional);
     margin-bottom: 30px;
 }
 
@@ -57,14 +57,14 @@
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1.4vw;
-    color: var(--additional-color);
+    color: var(--color-additional);
 }
 .place__ul > li {
     margin-bottom: 15px;
 }
 .place__ul > li > a {
     text-decoration: none;
-    color: var(--additional-color);
+    color: var(--color-additional);
 }
 .place__ul > li > a:hover {
     text-decoration: underline;

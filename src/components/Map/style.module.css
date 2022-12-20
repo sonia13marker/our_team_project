@@ -14,7 +14,7 @@
     font-size: 5vw;
     line-height: 103px;
     color: var(--color);
-    -webkit-text-stroke: 1px var(--additional-color);
+    -webkit-text-stroke: 1px var(--color-additional);
 }
 h3 {
     margin: 0;
@@ -29,7 +29,7 @@ h3 {
 .wrapper__block {
     width: 500px;
     height: 730px;
-    background-color: var(--additional-color);
+    background-color: var(--color-additional);
     position: absolute;
     right:75px;
     top: 50px;
