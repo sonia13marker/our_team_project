@@ -131,3 +131,43 @@
 .project__image:hover {
     filter: saturate(1);
 }
+
+/* @media screen and (max-width: 1280px) {
+    .projects_header {
+        display: block;
+        margin: 4rem 27% 0; 
+    }
+    .projects_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+        justify-items: center
+    }
+    .tags_container {
+        width: 600px;
+        gap: 25px;
+        margin: auto;
+    }
+    .tags {
+        height: 150px;
+        width: 100vw;
+        max-width: none;
+        gap: 30px;
+        border-right: none;
+        padding: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border-bottom: 1px solid var(--color-additional);
+    }
+    .projects_container {
+        width: 100%;
+        margin: 0 40px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+    
+} */
