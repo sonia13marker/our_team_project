@@ -60,7 +60,7 @@ export function PortfolioPage() {
     }, []);
 
     return <>
-            <MenuHamburger/>
+        <MenuHamburger/>
         <div className={style.wrapper}>
         <h1 className={style.projects_header}>проекты</h1>
             <div className={style.projects_wrapper}>
