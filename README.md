@@ -1,4 +1,4 @@
-<h1 align="center">🖥🖱WebClick⌨️💻 - <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=258F40&width=435&lines=website+creative+agency" alt="Typing SVG" /></a></h1> 
+<h1 align="center">WebClick - <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=258F40&width=435&lines=website+creative+agency" alt="Typing SVG" /></a></h1> 
 
 
 # Участники 
