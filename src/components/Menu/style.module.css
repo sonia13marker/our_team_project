@@ -94,6 +94,15 @@
     text-decoration: none;
     color: var(--color-additional);
 }
+.btn {
+    font-family: 'inter', sans-serif;
+    background-color: var(--color);
+    color: var(--color-additional);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
 
 @media (max-width: 1150px){
     .two_ul {
