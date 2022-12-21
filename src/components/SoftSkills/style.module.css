@@ -45,35 +45,20 @@
     color: var(--color);
 }
 
-.animated_arrow {
-    transition: 1s;
-    height: 2px;
-    width: 200px;
-    background-color: var(--color);
-    position: absolute;
-    right: 110px;
-    bottom: 40px;
-}
-
-.animated_arrow_tip {
-    transition: 1s;
-    border-radius: 50px;
-    height: 8px;
-    width: 8px;
-    background-color: var(--color);
-    position: absolute;
-    right: 306px;
-    bottom: 37px;
-}
-
-.active {
-    transition: .4s;
-    display: inline-block;
-    margin-right: 230px;
-}
-
-@media (max-width: 1000px) {
-    .content {
-        padding: 85px 0;
+@media screen and (max-width: 1024px) {
+    .background {
+    font-size: 12.5vw;
     }
+
+}
+@media screen  and (max-width: 780px) {
+
+.item {
+    padding: 30px 0;
+    font-size: 25px;
+}
+.content {
+    padding: 30px;
+}
+
 }

@@ -1,20 +1,22 @@
 import style from './style.module.css';
 import black_arrow from '../../images/black_arrow.svg';
 import MediaQuery from "react-responsive";
+import white_arrow from '../../images/white_arrow.svg';
+import { ColorImg } from '../ColorImg/ColorImg';
+
+import { useTranslation } from "react-i18next";
+
 
 export function AboutComp() {
+    const { t } = useTranslation();
+
     return (
         <>
             <div className={style.divBlock}>
-                <img className={style.arrow} src={black_arrow} alt="black arrow" />
-                <p className={style.text}>
-                Мы - команда амбициозных дизайнеров и разработчиков, которые любят создавать бренд и качественный продукт,
-                которые полностью удовлетворяют требованиям заказчика.
-                Наша команда поможет вам реализовать самые безумные идеи для ваших сайтов, а также создать современный и востребованный дизайн.
-                Каждый сайт, созданный в нашей студии, находится на первой строчке в поисковой выдаче.
-                </p>
+                <ColorImg className={style.arrow} src_white={black_arrow} src_dark={white_arrow} alt="black arrow" />
+                <p className={style.text}>{t("about_component_text")}</p>
                 <MediaQuery minWidth={1260}>
-                    <img className={style.arrow} src={black_arrow} alt="black arrow" />
+                    <ColorImg className={style.arrow1} src_white={black_arrow} src_dark={white_arrow} alt="black arrow"/>
                 </MediaQuery>
             </div>
         </>

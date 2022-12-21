@@ -1,9 +1,8 @@
 .menu {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    top: 0;
-    transition: all 0.2s;
-    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+    transform: translateX(-200%);
 }
 
 .menu.active {
@@ -17,7 +16,7 @@
     backdrop-filter: blur(2px);
 } */
 .menu__content {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: var(--color);
     transition: all 0.4s;
@@ -84,7 +83,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    margin-left: 500px;
+    margin-left: 300px;
     align-self: flex-end;
 
 }

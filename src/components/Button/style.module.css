@@ -25,5 +25,5 @@
 }
 
 .btnWrapper:hover {
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .5);
+    box-shadow: 12px 12px 2px 1px var(--hover-button);
 }

@@ -1,6 +1,6 @@
 export default
 [
-    {
+    {   
         name: "React Sneakers",
         author: "Гильманов Наиль",
         description: "Современный магазин кроссовок. Этот пет проект был сделан для изучения основ React и Redux.",

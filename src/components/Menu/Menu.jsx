@@ -2,28 +2,36 @@
 import style from './style.module.css';
 import classnames from "classnames";
 
+import { useTranslation } from "react-i18next";
+
 export const Menu = ({active, setActive}) => {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang)
+    }
+
     return (
-        <div>
-            <div className={classnames(style.menu, active?style.active:'')} onClick={() => setActive(false)}>
-                <div className={style.menu__content} onClick={e => e.stopPropagation()}>
-                    <div className={style.menu__header}>
-                        WebClick
-                    </div>
-                    <ul className={style.one_ul}>
-                        <li><a href="/">Главная</a></li>
-                        <li><a href="/about">О нас</a></li>
-                        <li><a href="/portfolio">Портфолио</a></li>
-                        <li><a href="/contacts">Контакты</a></li>
-                        <li><a href="/#">Политика конфиденциальности</a></li>
-                    </ul>
-                    <ul className={style.two_ul}>
-                        <li><p className={style.changeBtn}>Русский</p></li>
-                        <li><p className={style.changeBtn}>Тема</p></li>
-                        <li className={style.deg}><ButtonShare/></li>
-                    </ul>
+        <div className={classnames(style.menu, active?style.active:'')} onClick={() => setActive(false)}>
+            <div className="menu__content" onClick={e => e.stopPropagation()}>
+                <div className="menu__header">
+                    WebClick
                 </div>
+                <ul className='one_ul'>
+                    <li><a href="/">{t("nav_main")}</a></li>
+                    <li><a href="/about">{t("nav_about")}</a></li>
+                    <li><a href="/portfolio">{t("nav_portfolion")}</a></li>
+                    <li><a href="/contacts">{t("nav_contacts")}</a></li>
+                </ul>
+                <ul className='two_ul'>
+                    <li><p className="changeBtn" onClick={() => changeLanguage('ru')}>RU</p></li>
+                    <li><p className="changeBtn" onClick={() => changeLanguage('en')}>EN</p></li>
+                    <li><p className="changeBtn">{t('theme_btn')}</p></li>
+                    <li className="deg"><ButtonShare/></li>
+                    <p className="police"><a href="/#">{t("rules")}</a></p>
+                </ul>
             </div>
+
         </div>
     )
 }

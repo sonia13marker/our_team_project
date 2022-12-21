@@ -67,7 +67,6 @@
     /* background: rgba(90, 90, 90); */
     z-index: 3;
 }
-
 /*карточки ребят*/
 .ant {
     background: url('../../images/anton_photo11.jpg');
@@ -94,7 +93,6 @@
 .son {
     background: url('../../images/sonya_photo.jpg');
 }
-
 .son:hover{
     background: url('../../images/sonya_photo1.jpg');
     transition: 0.5s;
@@ -210,20 +208,38 @@
     animation: swing_reverse 2s ease;
     animation-iteration-count: infinite;
 }
+/*ДОДЕЛАТЬ*/
+@media screen and (max-width:1024px) {
+    .card {
+        height: 600px;
+        width: 260px;
+    }
+    .card__photo {
+        width: 260px;
+        height: 290px;
+    }
+    .card__block {
+    width: 260px;
 
-@media (max-width: 1250px) {
-    .wrapper {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        align-items: center;
+    }
+    .card__info_block {
+        width: 260px;
+
+    }
+    .card_info {
+        padding: 10px;
+    }
+    .card__name {
+        font-size: 15px;
+    }
+    .card__post {
+        font-size: 15px;
+        margin: 5px 0 10px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .head_text {
+        width: 750px;
     }
 
-    .all_wrapper {
-        margin-bottom: 10px;
-    }
-
-    .card_down {
-        margin-top: 10px;
-    }
 }

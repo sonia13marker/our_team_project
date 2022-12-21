@@ -1,23 +1,14 @@
 import style from "./style.module.css";
-import projects from "./projects";
+import projectsRu from "./projects_ru";
+import projectsEn from "./projects_en";
 import arrow from "./arrow.svg";
 import {useEffect, useState} from "react";
 import {Footer} from "../../components/Footer/Footer";
 import { MenuHamburger } from "../../components/MenuHamburger/MenuHamburger";
+import classnames from "classnames";
 
-function parseAllTags() {
-    let tags = {};
-    projects.forEach(value => {
-        value.tags.forEach(tag => {
-            if (tags[tag] === undefined) {
-                tags[tag] = 1;
-            } else {
-                tags[tag]++;
-            }
-        });
-    });
-    return tags;
-}
+import { useTranslation } from "react-i18next";
+
 
 function Tag({tag, active, onChange}) {
     const renderTag = typeof tag === "string" ? [tag, ""] : tag
@@ -35,10 +26,12 @@ function Tag({tag, active, onChange}) {
 }
 
 function Project({project}) {
+    const { t } = useTranslation();
+
     return <div className={style.project}>
         <div className={style.project__header}>
             <span>{project.author}</span>
-            <a href={project.link} target="_blank" rel="noreferrer">Смотреть<img src={arrow} alt="arrow"/></a>
+            <a href={project.link} target="_blank" rel="noreferrer">{t("show")}<img src={arrow} alt="arrow"/></a>
         </div>
         <div className={style.project__tags}>
             {
@@ -51,21 +44,37 @@ function Project({project}) {
     </div>
 }
 
+function SeeMoreButton() {
+    const { t } = useTranslation();
+
+    return <button className={style.see_more}>{t("show_more")}</button>
+}
+
 export function PortfolioPage() {
     const [tags, setTags] = useState({});
     const [activeTags, setActiveTags] = useState({});
+    const [maxIndex, setMaxIndex] = useState(4);
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         setTags(parseAllTags());
     }, []);
 
+    let filteredProjects = ''
+
+    if (i18n.language === "ru") {
+        filteredProjects = filterByTags(activeTags, projectsRu);
+    } else {
+        filteredProjects = filterByTags(activeTags, projectsEn);
+    }
+
     return <>
-            <MenuHamburger/>
+        <MenuHamburger/>
         <div className={style.wrapper}>
-        <h1 className={style.projects_header}>проекты</h1>
+        <h1 className={style.projects_header}>{t("projects")}</h1>
             <div className={style.projects_wrapper}>
                 <aside className={style.tags}>
-                    <span className={style.tags__header}>Теги:</span>
+                    <span className={style.tags__header}>{t("tags")}</span>
                     <div className={style.tags_container}>
                         {
                             Object.keys(tags).map((tag, idx) =>
@@ -78,15 +87,42 @@ export function PortfolioPage() {
                         }
                     </div>
                 </aside>
-                <div className={style.projects_container}>
-                    {
-                        filterByTags(activeTags, projects).map((pr, idx) => <Project key={idx} project={pr}/> )
-                    }
+                <div className={style.project_list_wrapper}>
+                    <div className={style.projects_container}>
+                        {
+                            filteredProjects.map((pr, idx) => {
+                                if (idx >= maxIndex) {
+                                    return null;
+                                }
+                                return <Project key={idx} project={pr}/>
+                            })
+                        }
+                    </div>
+                    <div
+                        className={classnames({[style.see_more__wrapper]: true, [style.see_more_hidden]: maxIndex >= filteredProjects.length})}
+                        onClick={() => setMaxIndex(maxIndex + 4)}>
+                        <SeeMoreButton/>
+                    </div>
                 </div>
             </div>
         </div>
         <Footer/>
     </>
+}
+
+function parseAllTags() {
+    let tags = {};
+
+    projectsRu.forEach(value => {
+        value.tags.forEach(tag => {
+            if (tags[tag] === undefined) {
+                tags[tag] = 1;
+            } else {
+                tags[tag]++;
+            }
+        });
+    });
+    return tags;
 }
 
 function anyTagsActive(tags) {

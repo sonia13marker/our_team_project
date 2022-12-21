@@ -18,3 +18,22 @@
     cursor: pointer;
     transition: 0.5s;
 }
+
+@media screen and (max-width:1024px) {
+    .panelWrapper {
+        width: 80px; 
+    }
+    .panelElem {
+        margin: auto;
+    }
+    .panelElem > img {
+        width: 22px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .panelWrapper {
+        width: 60px; 
+    }
+}

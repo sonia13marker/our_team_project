@@ -91,7 +91,7 @@ input:focus {
     margin:0;
     padding: 0;
 }
-.radio_text {
+.check_text {
     font-family: 'Ruda';
     font-weight: 400;
     font-size: 18px;
@@ -101,17 +101,31 @@ input:focus {
     margin-bottom: 70px;
 }
 
-input[type=radio] {
-    border: 1px solid var(--color-additional);
+input[type=checkbox] {
+    border: 3px solid var(--color-additional);
     padding: 0.5em;
-    -webkit-appearance: none;
-}
-/*ЗАМЕНИТЬ НА БЕЛЫЙ ЦВЕТ В ЧЕРНОЙ ТЕМЕ*/
-  input[type=radio]:checked {
-    background: url('../../images//square.svg') no-repeat center center;
-    background-size: 9px 9px;
 }
 
 .red {
     color: #e1271d;
+}
+
+@media screen and (max-width: 780px) {
+    .input_1 {
+        width: 70vw;
+    
+    }
+    .form {
+        width: 70vw;
+    }
+    .input_2 {
+        width: 30vw;
+    }
+    .two_form {
+        gap: 4.5vw;
+    }
+    
+.btnWrapper {
+   margin: 0 auto;
+}
 }

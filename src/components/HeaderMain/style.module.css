@@ -22,3 +22,29 @@
     text-decoration: none;
 }
 
+
+@media screen and (max-width:1280px) {
+ .nav {
+    padding-left: 100px;
+ }   
+
+    
+}
+
+@media screen and (max-width:1024px) {
+    .nav {
+        font-size: 15px;
+        padding-left: 65px;
+        margin-left: 80px;
+    }
+
+    
+}
+@media screen and (max-width: 780px) {
+    .nav {
+        padding-left: 78px;
+        margin-left: 60px;
+    }
+}
+
+

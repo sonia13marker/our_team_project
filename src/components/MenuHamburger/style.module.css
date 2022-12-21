@@ -1,39 +1,62 @@
 .container {
-  width: 100vw;
-  height: 75px;
-  position: relative;
-  z-index: 1000;
+    width: 100vw;
+    height: 75px;
+    position: relative;
+    z-index: 1000;
 }
+
 .button_menu {
-  width: 50px;
-  height: 25px;
-  position: absolute;
-  top: 75px;
-  right: 55px;
-  cursor: pointer;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    top: 75px;
+    right: 55px;
+    cursor: pointer;
+    z-index: 1001;
 }
+
 .button_menu:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  background-color: var(--color-additional);
-  width: 40px;
-  height: 3px;
+    content: '';
+    position: absolute;
+    top: 0;
+    background-color: var(--color-additional);
+    width: 40px;
+    height: 3px;
+    transition: transform .3s, width .3s;
 }
+
 .button_menu span {
-  position: absolute;
-  top: 11px;
-  right: 10px;
-  background-color: var(--color-additional);
-  width: 50px;
-  height: 3.5px;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    background-color: var(--color-additional);
+    width: 50px;
+    height: 3.5px;
+    transition: opacity .3s;
 }
+
 .button_menu:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  background-color: var(--color-additional);
-  width: 30px;
-  height: 3px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background-color: var(--color-additional);
+    width: 30px;
+    height: 3px;
+    transition: transform .3s, width .3s;
+}
+
+.button_menu_active span {
+    opacity: 0;
+}
+
+.button_menu_active:before {
+    transform: rotate(45deg) translateY(16px);
+    width: 50px;
+}
+
+.button_menu_active:after {
+    left: 0;
+    transform: rotate(-45deg) translateY(-16px);
+    width: 50px;
 }
