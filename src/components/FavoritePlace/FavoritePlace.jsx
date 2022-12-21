@@ -33,7 +33,7 @@ export const FavoritePlace = () => {
             </span>
 
             <span className={style.place__city}>
-                <h3 className={style.place__h3}>Набережные челны:</h3>
+                <h3 className={style.place__h3}>Казань:</h3>
                 <ul className={style.place__ul}>
                     <li><a href="https://yandex.ru/maps/org/koltso/1002974978/?ll=49.124336%2C55.786430&z=16" target="blank">ул. Петербургская, 1, Казань<br /> ТРК "Кольцо"</a></li>
                 </ul>

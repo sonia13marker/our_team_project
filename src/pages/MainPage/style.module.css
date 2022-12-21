@@ -78,3 +78,9 @@ h1 {
 .changeBtn {
     cursor: pointer;
 }
+
+@media (min-width: 1190px) {
+    .changeBtn {
+        width: 100%;
+    }
+}

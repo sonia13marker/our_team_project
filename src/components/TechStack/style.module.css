@@ -121,8 +121,14 @@
 }
 /*нужно, чтобы они находились по 4 в линии (как минимум на 1920px и 1440рх)*/
 
-@media (min-width: 1920px) {
+@media (max-width: 1200px) {
     .tech_stack {
-        max-width: 40%;
+        max-width: 60%;
+    }
+
+    .tech_card {
+        padding: 20px 25px;
+        font-weight: 600;
+        font-size: 20px;
     }
 }

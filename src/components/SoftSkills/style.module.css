@@ -10,8 +10,7 @@
 
 
 .background {
-  
-    font-family: 'Inter', sans-serif;
+    font-family: sans-serif;
     position: absolute;
 
     height: 100%;
@@ -71,4 +70,10 @@
     transition: .4s;
     display: inline-block;
     margin-right: 230px;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        padding: 85px 0;
+    }
 }

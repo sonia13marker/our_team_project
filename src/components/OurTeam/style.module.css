@@ -16,6 +16,7 @@
     text-decoration-style: solid;
     text-decoration-color: var(--color-additional);
 }
+
 .wrapper {
     height: 750px;
     width: 1265px;
@@ -24,6 +25,7 @@
     flex-direction: row;
     margin: 85px auto 260px;
 }
+
 .card {
     height: 615px;
     width: 316px;
@@ -65,6 +67,7 @@
     /* background: rgba(90, 90, 90); */
     z-index: 3;
 }
+
 /*карточки ребят*/
 .ant {
     background: url('../../images/anton_photo11.jpg');
@@ -91,6 +94,7 @@
 .son {
     background: url('../../images/sonya_photo.jpg');
 }
+
 .son:hover{
     background: url('../../images/sonya_photo1.jpg');
     transition: 0.5s;
@@ -205,4 +209,21 @@
 .arr_top {
     animation: swing_reverse 2s ease;
     animation-iteration-count: infinite;
+}
+
+@media (max-width: 1250px) {
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .all_wrapper {
+        margin-bottom: 10px;
+    }
+
+    .card_down {
+        margin-top: 10px;
+    }
 }

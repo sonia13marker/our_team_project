@@ -7,11 +7,11 @@ import { MenuHamburger } from '../../components/MenuHamburger/MenuHamburger';
 export function ContactsPage() {
     return (<>
             <MenuHamburger/>
-        <div className={style.wrapper}>
-            <Map />
-            <FormBlock />
-            <Footer />
-        </div>
+            <div className={style.wrapper}>
+                <Map />
+                <FormBlock />
+                <Footer />
+            </div>
         </>
     )
 }
