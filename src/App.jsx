@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, CSSProperties } from 'react';
 
 import Loader from 'react-spinner-loader';
 
@@ -11,23 +11,41 @@ import { ContactsPage } from "./pages/ContactsPage/ContactsPage";
 import ThemeProvider from "./providers/ThemeProvider";
 import { NotFound } from "./components/NotFound/NotFound";
 
+import SquareLoader from "react-spinners/SquareLoader";
+
+
 
 export const App = () => {
-    const [loader, setLoader] = useState(true);
-    
-    // const [isLoading, setIsLoading] = useState(true);
+
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
-        setTimeout(() => {
-            setLoader(false);
-        }, 1000)
-    })
+        setLoading(true)
+        setTimeout(()=> {
+            setLoading(false)
+        }, 1500)
+    },[])
+
+    const style_loader: React.CSSProperties = {
+        display: "block",
+        margin: "300px auto",
+      };
+
     return (
         <>
-        {loader===true? 
-                <Loader show = {loader} type = "body"></Loader>:
-                <Loader  type = {<MainPage/>}></Loader>
-        }
-        <ThemeProvider>
+    
+        {
+            
+            loading ? <SquareLoader
+            color="#5A5A5A"
+            loading={loading}
+            size={50}
+            cssOverride={style_loader}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+
+            :
+            <ThemeProvider>
             <BrowserRouter>
                 <Layout>
                     <Routes>
@@ -40,6 +58,9 @@ export const App = () => {
                 </Layout>
             </BrowserRouter>
         </ThemeProvider>
+      
+        }
+        
         </>
     )
 }

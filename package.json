@@ -26,6 +26,7 @@
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "react-spinner-loader": "^1.1.1",
+    "react-spinners": "^0.13.7",
     "react-web-share": "^2.0.2",
     "stylelint": "^14.16.0",
     "web-vitals": "^2.1.4"
