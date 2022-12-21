@@ -54,6 +54,19 @@
     flex-direction: column;
     align-items: flex-start;
 }
+.one_ul a::after {
+    content: "";
+    background-color: var(--color-additional);
+    display: block;
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.one_ul a:hover::after {
+    width: 100%;
+}
 .two_ul {
     width: 100%;
     height: 50px;
@@ -93,6 +106,15 @@
 .police a {
     text-decoration: none;
     color: var(--color-additional);
+}
+.btn {
+    font-family: 'inter', sans-serif;
+    background-color: var(--color);
+    color: var(--color-additional);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 1150px){

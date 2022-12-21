@@ -4,6 +4,8 @@ import classnames from "classnames";
 
 import { useTranslation } from "react-i18next";
 
+import { ThemeContext, themes } from '../../contexts/ThemeContext';
+
 export const Menu = ({active, setActive}) => {
     const { t, i18n } = useTranslation();
 
@@ -27,7 +29,18 @@ export const Menu = ({active, setActive}) => {
                 <ul className={style.two_ul}>
                     <li><p className={style.changeBtn} onClick={() => changeLanguage('ru')}>RU</p></li>
                     <li><p className={style.changeBtn} onClick={() => changeLanguage('en')}>EN</p></li>
-                    <li><p className={style.changeBtn}>{t('theme_btn')}</p></li>
+                    <li><ThemeContext.Consumer>
+                                {({ theme, setTheme }) => (
+                                    <button
+                                        className={style.btn}
+                                        onClick={() => {
+                                            if (theme === themes.light) setTheme(themes.dark)
+                                            if (theme === themes.dark) setTheme(themes.light)
+                                        }}
+                                        value={theme === themes.dark}
+                                    >{t("theme_btn")}</button>
+                                )}
+                            </ThemeContext.Consumer></li>
                     <li className={style.deg}><ButtonShare/></li>
                 </ul>
             </div>

@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # WebStorm
-/.idea
+/.idea.idea
+.idea

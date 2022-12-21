@@ -7,6 +7,7 @@ import { MenuHamburger } from '../../components/MenuHamburger/MenuHamburger';
 export function ContactsPage() {
     return (<>
             <MenuHamburger/>
+            <h2 className={style.h2}>Контакты</h2>
             <div className={style.wrapper}>
                 <Map />
                 <FormBlock />
