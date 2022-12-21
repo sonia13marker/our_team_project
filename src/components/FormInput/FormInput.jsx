@@ -42,7 +42,7 @@ export const FormInput = () => {
 
                 <label className={style.label}>
                 E-mail: <span className={style.red}>*</span> <br />
-                <input className={style.input_2} placeholder="hello123@mail.ru" {...register("eMail", {
+                <input className={style.input_2} type="email" placeholder="hello123@mail.ru" {...register("eMail", {
                     required: t("required1"),
                    
                         //доделать!
@@ -58,7 +58,7 @@ export const FormInput = () => {
 
             <label className={style.label}>
                 {t("phone_number")} <span className={style.red}>*</span><br />
-                <input className={style.input_2} placeholder="+7 (***) *** - ** - **" {...register("phoneNumber", {
+                <input className={style.input_2} type="tel" placeholder="+7 (***) *** - ** - **" {...register("phoneNumber", {
                     required: t("required1"),
                         max: 22,
                         min: {
@@ -76,7 +76,7 @@ export const FormInput = () => {
 
             <label className={style.label}>
                 {t("message_message")} <br />
-                <input className={style.input_1} placeholder={t("placeholder2")} {...register("messages", {
+                <input className={style.input_1} type="text" placeholder={t("placeholder2")} {...register("messages", {
                     maxLength: {
                         value: 300,
                         message: t("message4")
@@ -101,7 +101,7 @@ export const FormInput = () => {
             </div>
 
         <div className={style.btnWrapper}>
-            <input type="submit"  disabled={!isValid} className={classnames(style.btnInner, style.submit)}/>
+            <input type="submit" disabled={!isValid} className={classnames(style.btnInner, style.submit)}/>
         </div>
     </form>
 

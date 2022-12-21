@@ -11,12 +11,11 @@
     text-transform: lowercase;
     color: var(--color-additional);
     margin-left: 75px;
-    text-transform: lowercase;
     margin-bottom: 0;
 }
 
 .wrapper__text {
-    font-family: 'Ruda';
+    font-family: 'Ruda', sans-serif;
     font-weight: 400;
     font-size: 1.3vw;
     line-height: 24px;
@@ -34,21 +33,23 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .wrapper__form {
-        margin-top: 380px;
+        margin-top: 300px;
     }
     
 }
 
-@media screen  and (max-width: 780px){
+@media (max-width: 780px){
     .wrapper__form {
-        margin-top: 950px;
+        margin-top: 700px;
     }
     .wrapper__h2 {
         font-size: 50px;
+        margin-left: 10px;
     }
     .wrapper__text {
        font-size: 18px;
+        margin-left: 10px;
     }
 }
