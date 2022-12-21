@@ -79,10 +79,16 @@ input:focus {
     font-size: 18px;
     color: var(--color);
 }
-.btnInner, .submit, .btnWrapper:hover {
+
+.btnInner,
+.submit,
+.btnWrapper:hover {
     cursor: pointer;
 }
-.btnInner, .submit, .btnWrapper:active {
+
+.btnInner,
+.submit,
+.btnWrapper:active {
     cursor: pointer;
 }
 
@@ -129,6 +135,6 @@ input[type=checkbox] {
     }
     
     .btnWrapper {
-       margin: 0 auto;
+       margin: 0 10px;
     }
 }

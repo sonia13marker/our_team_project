@@ -124,6 +124,17 @@
     }
 }
 
+@media (max-width: 780px) {
+    .one_ul li a {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .two_ul {
+        margin-left: 0;
+    }
+}
+
 /* .menu {
     position: fixed;
     width: 100vw;
