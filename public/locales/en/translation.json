@@ -3,6 +3,9 @@
     "nav_about": "About us",
     "nav_portfolion": "Portfolion",
     "nav_contacts": "Contacts",
+    "nav_main": "Home",
+    "share": "Share",
+    "rules": "Privacy Policy",
     "theme_btn": "Theme",
     "show_btn": "Look at",
     "about_component_text": "We are a team of ambitious designers and developers who love to create a brand and a quality product that fully meets the requirements of the customer. Our team will help you realize the craziest ideas for your websites, as well as create a modern and sought-after design. Each site created in our studio is on the first line in the search results.",
@@ -67,5 +70,9 @@
     "message5": "You have not consented to the processing of data ",
     "agree": "I give my consent to the processing of personal data",
     "message_message": "Message: ",
-    "phone_number": "Phone: "
+    "phone_number": "Phone: ",
+    "projects": "projects",
+    "tags": "Tags:",
+    "show": "View",
+    "show_more": "View more"
 }
