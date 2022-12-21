@@ -41,6 +41,14 @@ h1 {
     font-size: 50px;
     font-weight: 600;
 }
+.btn {
+    font-family: 'inter', sans-serif;
+    background-color: var(--color);
+    color: var(--color-additional);
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
 
 .headingTitle1 {
     font-size: 8vw;

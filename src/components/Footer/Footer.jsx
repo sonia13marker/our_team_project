@@ -1,8 +1,10 @@
 import style from './style.module.css';
 import classnames from 'classnames';
-import logo from '../../images/logo1_white.svg';
+import logo_white from '../../images/logo_foo_white.svg';
+import logo_black from '../../images/logo_foo_black.svg';
+import { ColorImg } from '../ColorImg/ColorImg';
 
-import { ThemeContext, themes } from '../../contexts/ThemeContext'
+import { ThemeContext, themes } from '../../contexts/ThemeContext';
 
 import { useTranslation } from "react-i18next";
 
@@ -17,7 +19,10 @@ export const Footer = () => {
         <footer className={style.footer}>
             <ul className={style.row}>
                 <li className={classnames(style.item_box_left, style.item, style.item_box)}>
-                    <a className={style.style_link} href="/"><img src={logo} alt="logo"/></a>
+                    <a className={style.style_link} href="/">
+                        {/* <img src={logo} alt="logo"/> */}
+                    <ColorImg src_white={logo_white} src_dark={logo_black} alt="logo"/>
+                    </a>
                     {/* <a className={style.style_link} href="/#">WebClick</a> */}
                 </li>
                 <li className={classnames(style.item_box_center, style.item, style.item_box)}>

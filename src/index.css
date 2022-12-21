@@ -2,12 +2,14 @@
     --color: #FEFEFE;
     --color-additional: #111;
     --light-gray: #A3A3A3;
+    --hover-button: rgba(0, 0, 0, .5);
 }
 
 :root[data-theme="dark"] {
     --color: #111;
     --color-additional: #FEFEFE;
     --light-gray: #5A5A5A;
+    --hover-button: rgba(161, 158, 158, 0.5);
 }
 
 body {

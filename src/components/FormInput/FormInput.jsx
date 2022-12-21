@@ -89,15 +89,15 @@ export const FormInput = () => {
             </div>
 
 
-            <label className={style.radio_text}>
-                <input className={style.input_3} type="radio" name="accept" value="yes" {...register("radio", {
+            <label className={style.check_text}>
+                <input className={style.input_3} type="checkbox" name="accept" value="yes" {...register("agree", {
                        required: t("required1"),
                        message: t("message5"), 
                 })} 
                 /> {t("agree")}
                 </label>
             <div className={style.errors}>
-                {errors?.radio && <p>{errors?.radio?.message || t("error")}</p>}
+                {errors?.agree && <p>{errors?.agree?.message || t("error")}</p>}
             </div>
 
         <div className={style.btnWrapper}>

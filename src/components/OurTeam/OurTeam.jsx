@@ -1,9 +1,12 @@
 import style from './style.module.css';
 import arrow_down from '../../images/arrow_down.svg';
+import arrow_down_black from '../../images/arrow_down_black.svg';
 import arrow_top from '../../images/arrow_top.svg';
+import arrow_top_black from "../../images/arrow_top_black.svg";
 import classnames from 'classnames';
 import React, {Component} from 'react';
 import "./style.css";
+import { ColorImg } from '../ColorImg/ColorImg';
 
 import { withTranslation } from "react-i18next";
 
@@ -40,7 +43,7 @@ class OurTeam extends Component {
                         <span className={classnames(style.card__photo, style.ant)}>
                         </span>
                         <span ref={this.card1} className={classnames(style.card__block)}>
-                            <img src={arrow_down} className={style.arr_down} alt=""/>
+                        <ColorImg className={style.arr_down} src_white={arrow_down} src_dark={arrow_down_black} alt=""/>
                         </span>
                         <span className={classnames(style.card__info_block)}>
                             <p className={style.card_info}><span className={style.weight}>{t("tech")}</span> HTML, CSS,  JavaScript, Python, React, Flask, Bootstrap</p>
@@ -57,7 +60,7 @@ class OurTeam extends Component {
                     <p className={style.card__post}>{t("nail_skills")}</p>
                     <span className={classnames(style.card__photo, style.nail)}></span>
                     <span ref={this.card2} className={classnames(style.card__block)}>
-                        <img src={arrow_top} className={style.arr_top} alt=""/>
+                    <ColorImg className={style.arr_top} src_white={arrow_top} src_dark={arrow_top_black} alt=""/>
                     </span>
                     <span className={classnames(style.card__info_block)}>
                         <p className={style.card_info}><span className={style.weight}>{t("tech")}</span> Html5, Css3, React, Redux, Bootstrap, Python3, Flask, MongoDB, Sqlite3</p>
@@ -75,7 +78,7 @@ class OurTeam extends Component {
                         <p className={style.card__post}>{t("ruslan_skills")}</p>
                         <span className={classnames(style.card__photo, style.rus)}></span>
                         <span ref={this.card3} className={classnames(style.card__block)}>
-                            <img src={arrow_down} className={style.arr_down} alt=""/>
+                        <ColorImg className={style.arr_down} src_white={arrow_down} src_dark={arrow_down_black} alt=""/>
                         </span>
                         <span className={classnames(style.card__info_block)}>
                             <p className={style.card_info}><span className={style.weight}>{t("tech")}</span> Python3, Django, AIOHttp, FastAPI, Flask, JavaScript, PyScript, Bootstrap, Tortoise ORM</p>
@@ -94,7 +97,7 @@ class OurTeam extends Component {
                     <p className={style.card__post}>{t("sofia_skills")}</p>
                     <span className={classnames(style.card__photo, style.son)}></span>
                     <span ref={this.card4} className={classnames(style.card__block)}>
-                        <img src={arrow_top} className={style.arr_top} alt=""/>
+                    <ColorImg className={style.arr_top} src_white={arrow_top} src_dark={arrow_top_black} alt=""/>
                     </span>
                     <span className={classnames(style.card__info_block)}>
                         <p className={style.card_info}><span className={style.weight}>{t("tech")}</span> HTML5, CSS3, React, JavaScript, SCSS, Figma, WordPress</p>

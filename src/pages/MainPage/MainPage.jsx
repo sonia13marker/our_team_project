@@ -1,6 +1,8 @@
 import style from "./style.module.css";
 import {Button} from "../../components/Button/Button";
 import {LeftPanel} from "../../components/LeftPanel/LeftPanel";
+
+import { ThemeContext, themes } from '../../contexts/ThemeContext'
 import {ColorImg} from "../../components/ColorImg/ColorImg";
 
 import img_white from "../../images/imgwhite.png";
@@ -30,10 +32,22 @@ export const MainPage = () => {
                     <div className={style.changeBtns}>
                             <p className={style.changeBtn} onClick={() => changeLanguage('ru')}>RU</p>
                             <p className={style.changeBtn} onClick={() => changeLanguage('en')}>EN</p>
-                            <p className={style.changeBtn}>{t("theme_btn")}</p>
+
+                            <ThemeContext.Consumer>
+                                {({ theme, setTheme }) => (
+                                    <button
+                                        className={style.btn}
+                                        onClick={() => {
+                                            if (theme === themes.light) setTheme(themes.dark)
+                                            if (theme === themes.dark) setTheme(themes.light)
+                                        }}
+                                        value={theme === themes.dark}
+                                    >{t("theme_btn")}</button>
+                                )}
+                            </ThemeContext.Consumer>
+
                     </div>
-                    {/* <div className={style.image}></div> */}
-                    <ColorImg className={style.image} src_white={img_white} src_dark={img_dark} alt="main img"/>
+                    <ColorImg className={style.image} src_white={img_dark} src_dark={img_white} alt="main img"/>
                 </div>
             </div>
         </>

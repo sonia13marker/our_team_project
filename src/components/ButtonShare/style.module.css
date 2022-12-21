@@ -1,7 +1,11 @@
 .button {
     background-color: var(--color);
     border: none;
+    cursor: pointer;
 
+}
+.button:hover {
+    cursor: pointer;
 }
 .share {
     width: 22px;
