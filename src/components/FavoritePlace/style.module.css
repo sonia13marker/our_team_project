@@ -15,11 +15,12 @@
 
 .stroke {
     display: block;
-    width: 45vw;
+    width: 50vw;
     height: 5px;
     border: none;
     align-self: center;
     background-color: var(--color-additional);
+    margin-left: 0;
 }
 .wrapper__h2 {
     font-family: 'Inter', sans-serif;

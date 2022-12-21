@@ -22,6 +22,20 @@
     text-decoration: none;
 }
 
+.nav_elem::after {
+    content: "";
+    background-color: var(--color-additional);
+    display: block;
+    margin-top: 2px;
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.nav_elem:hover::after {
+    width: 100%;
+}
 
 @media screen and (max-width:1280px) {
  .nav {
