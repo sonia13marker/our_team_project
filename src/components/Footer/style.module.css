@@ -74,10 +74,25 @@
     margin-left: 2px;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 880px) {
+    .row_first {
+        flex-direction: column;
+    }
+
+    .footer {
+        height: 100%;
+    }
+
+    .item_box_left,
+    .item_box_right {
+        width: 100%;
+        border-color: var(--color-additional);
+    }
+
     .style_link {
         font-size: 15px;
     }
+
     .btn {
         font-size: 15px;
     }
