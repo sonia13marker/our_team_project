@@ -35,7 +35,7 @@
  - необычная фавиконка собственного производства;
  - уникальные шрифты, которые не часто встретишь в обычных проектах;)
 
-# В ходе работы мы использовали 
+<h2> В ходе работы мы использовали: </h2>
 
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
