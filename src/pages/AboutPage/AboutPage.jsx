@@ -1,13 +1,14 @@
 import {TechStack} from "../../components/TechStack/TechStack";
-import { SoftSkills } from "../../components/SoftSkills/SoftSkills";
 import { AboutComp } from '../../components/AboutComp/AboutComp';
 import style from './style.module.css';
-import { OurTeam } from '../../components/OurTeam/OurTeam';
 import { Footer } from "../../components/Footer/Footer";
 import { FavoritePlace } from "../../components/FavoritePlace/FavoritePlace";
 import { MenuHamburger } from "../../components/MenuHamburger/MenuHamburger";
 
 import { useTranslation } from "react-i18next";
+import MediaQuery from "react-responsive";
+import SoftSkills from "../../components/SoftSkills/SoftSkills";
+import OurTeam from "../../components/OurTeam/OurTeam";
 
 export function AboutPage() {
     const { t } = useTranslation();

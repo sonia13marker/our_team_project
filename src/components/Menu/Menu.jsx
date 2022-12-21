@@ -13,22 +13,22 @@ export const Menu = ({active, setActive}) => {
 
     return (
         <div className={classnames(style.menu, active?style.active:'')} onClick={() => setActive(false)}>
-            <div className="menu__content" onClick={e => e.stopPropagation()}>
-                <div className="menu__header">
+            <div className={style.menu__content} onClick={e => e.stopPropagation()}>
+                <div className={style.menu__header}>
                     WebClick
                 </div>
-                <ul className='one_ul'>
+                <ul className={style.one_ul}>
                     <li><a href="/">{t("nav_main")}</a></li>
                     <li><a href="/about">{t("nav_about")}</a></li>
                     <li><a href="/portfolio">{t("nav_portfolion")}</a></li>
                     <li><a href="/contacts">{t("nav_contacts")}</a></li>
+                    <li><a href="/rules">{t("rules")}</a></li>
                 </ul>
-                <ul className='two_ul'>
-                    <li><p className="changeBtn" onClick={() => changeLanguage('ru')}>RU</p></li>
-                    <li><p className="changeBtn" onClick={() => changeLanguage('en')}>EN</p></li>
-                    <li><p className="changeBtn">{t('theme_btn')}</p></li>
-                    <li className="deg"><ButtonShare/></li>
-                    <p className="police"><a href="/#">{t("rules")}</a></p>
+                <ul className={style.two_ul}>
+                    <li><p className={style.changeBtn} onClick={() => changeLanguage('ru')}>RU</p></li>
+                    <li><p className={style.changeBtn} onClick={() => changeLanguage('en')}>EN</p></li>
+                    <li><p className={style.changeBtn}>{t('theme_btn')}</p></li>
+                    <li className={style.deg}><ButtonShare/></li>
                 </ul>
             </div>
 
