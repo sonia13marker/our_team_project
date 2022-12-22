@@ -21,27 +21,28 @@ h3 {
     padding: 0;
 }
 
-/*делаем карту черно-белой*/
 .map {
+    /* делаем карту черно-белой */
     filter: saturate(0) brightness(1) invert(.8);
+
     height: 100%;
 }
 
 .wrapper__block {
-    width: 500px;
-    height: 730px;
+    width: 435px;
+    height: 600px;
     background-color: var(--color-additional);
     position: absolute;
     right: 75px;
-    top: 50px;
+    top: 75px;
     z-index: 2;
-    padding: 20px;
+    padding-left: 65px;
+    padding-top: 130px;
 }
 
 .container {
     width: 400px;
     height: 410px;
-    margin: 70px 0 65px;
 }
 
 .block__header {
@@ -63,23 +64,13 @@ h3 {
 
 @media (max-width: 1280px) {
     .wrapper__block {
-        right: 25px;
+        right: 52px;
     }
 }
 
 @media (max-width: 1024px){
     .wrapper__h3 {  
         font-size: 48px;
-    }
-    
-    .wrapper__block {
-        width: 450px;
-        height: 645px;
-        right:25px;
-    }
-
-    .container {
-        margin: 60px 0 60px 50px;
     }
 
     iframe {

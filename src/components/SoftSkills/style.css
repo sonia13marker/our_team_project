@@ -27,6 +27,6 @@
 
 @media (max-width: 780px) {
     .active {
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
