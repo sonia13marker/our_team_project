@@ -7,6 +7,7 @@ import { MenuHamburger } from '../../components/MenuHamburger/MenuHamburger';
 import { withTranslation } from "react-i18next";
 
 export function ContactsPage() {
+    const {t} = useTranslation();
     return (<>
             <MenuHamburger/>
             <h2 className={style.h2}>{t("contacts")}</h2>
