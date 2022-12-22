@@ -1,6 +1,6 @@
 import style from "./style.module.css";
-import projectsRu from "./projects_ru";
-import projectsEn from "./projects_en";
+import projectsRu from "../../locales/ru/projects_ru";
+import projectsEn from "../../locales/en/projects_en";
 import arrow from "../../images/arrow.svg";
 import {useEffect, useState} from "react";
 import {Footer} from "../../components/Footer/Footer";

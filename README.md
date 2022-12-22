@@ -13,7 +13,7 @@
 
 <h2>Ссылки:
 
-<h3>Сайт -</h3> <a href="#"></a>
+<h3>Сайт - <a href="https://webclick.netlify.app/">перейти</a></h3>
 
 <h3>Дизайн - <a href="https://www.figma.com/file/0qCTiBp29ZK9FJGXDz7zrQ/OurTeamProject?node-id=0%3A1&t=fF5CPOTSF8kG02ZE-1">figma.com</a></h3>
 
@@ -158,6 +158,13 @@
   <p>если вы хотите сделать с нами что-нибудь вместе, обязательно пишите!</p>
   <img src="https://user-images.githubusercontent.com/111881249/209009100-51657a0f-b4c7-4c4b-924d-32c6689fa32f.png" name="image-name">
   
+-------------
+ 
+ <p>При добавлении данных, после прохождения валидации и согласии на обработку персональных данных, все написанное отправляется на почту одному из учатсников, где он может это видеть и контроллировать</p>
+  <img src="https://user-images.githubusercontent.com/111881249/209139174-34acc94d-fa42-4f4d-90f2-0ab93a330f2b.png" name="image-name">
+ <img src="https://user-images.githubusercontent.com/111881249/209139542-6e540c7f-3b85-454a-a6a6-549bfbd8b57d.png" name="image-name">
+ 
+
 </details>
 
 <details>
