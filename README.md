@@ -13,7 +13,7 @@
 
 <h2>Ссылки:
 
-<h3>Сайт -</h3> <a href="#"></a>
+<h3>Сайт - <a href="https://webclick.netlify.app/">перейти</a></h3>
 
 <h3>Дизайн - <a href="https://www.figma.com/file/0qCTiBp29ZK9FJGXDz7zrQ/OurTeamProject?node-id=0%3A1&t=fF5CPOTSF8kG02ZE-1">figma.com</a></h3>
 
