@@ -1,6 +1,4 @@
-import React, {useState, useEffect, CSSProperties } from 'react';
-
-import Loader from 'react-spinner-loader';
+import React, {useState, useEffect } from 'react';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from './components/Layout/Layout'
@@ -25,16 +23,14 @@ export const App = () => {
         }, 1500)
     },[])
 
-    const style_loader: React.CSSProperties = {
+    const style_loader = {
         display: "block",
         margin: "300px auto",
-      };
+    };
 
     return (
         <>
-    
         {
-            
             loading ? <SquareLoader
             color="#5A5A5A"
             loading={loading}
@@ -43,17 +39,16 @@ export const App = () => {
             aria-label="Loading Spinner"
             data-testid="loader"
           />
-
             :
             <ThemeProvider>
             <BrowserRouter>
                 <Layout>
                     <Routes>
-                        <Route path="*" element={<NotFound />} />
                         <Route path="/" element={<MainPage />}/>
                         <Route path="/about" element={<AboutPage/>}/>
                         <Route path="/portfolio" element={<PortfolioPage/>}/>
                         <Route path="/contacts" element={<ContactsPage/>}/>
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Layout>
             </BrowserRouter>

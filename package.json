@@ -32,10 +32,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npx webpack serve --mode production",
-    "build": "webpack --mode production",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "deploy": "gh-pages -d dist",
     "lint:js": "eslint \"./src/**/*.js\" --fix",
     "lint:css": "npx stylelint \"**/*.css\"",
     "eject": "react-scripts eject"
@@ -49,8 +48,10 @@
   "plugins": [
     "react"
   ],
-  "extends": ["eslint:all", "plugin:react/all"],
-  
+  "extends": [
+    "eslint:all",
+    "plugin:react/all"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
@@ -71,6 +72,7 @@
     "css-loader": "^6.7.2",
     "eslint": "^8.29.0",
     "eslint-plugin-react": "^7.31.11",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.75.0"
   }
