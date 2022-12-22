@@ -121,6 +121,6 @@
 
 @media (max-width: 780px) {
     .wrapper__place {
-        margin: 0 20px;
+        margin: 0;
     }
 }
