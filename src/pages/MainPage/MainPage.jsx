@@ -59,7 +59,7 @@ export const MainPage = () => {
                     </div>
 
                     {/* <div className={style.image}></div> */}
-                    <MediaQuery minWidth={1190}>
+                    <MediaQuery minWidth={870}>
                         <ColorImg className={style.image} src_white={img_dark} src_dark={img_white} alt="main img"/>
                     </MediaQuery>
                 </div>

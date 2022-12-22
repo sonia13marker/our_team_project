@@ -12,7 +12,7 @@ h1 {
 }
 
 .contentSide {
-    width: 600px;
+    width: 100%;
 }
 
 .image {
@@ -31,7 +31,6 @@ h1 {
 }
 
 .infoBlock {
-    min-width: 500px;
     margin-top: 30vh;
     margin-left: 140px;
     margin-right: 20px;
