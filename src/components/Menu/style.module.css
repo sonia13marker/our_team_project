@@ -34,6 +34,11 @@
     color: var(--color-additional);
     width: 100%;
 }
+a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: var(--color-additional);
+}
 
 .one_ul li a {
     color: var(--color-additional);

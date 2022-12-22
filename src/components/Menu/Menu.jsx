@@ -17,7 +17,7 @@ export const Menu = ({active, setActive}) => {
         <div className={classnames(style.menu, active?style.active:'')} onClick={() => setActive(false)}>
             <div className={style.menu__content} onClick={e => e.stopPropagation()}>
                 <div className={style.menu__header}>
-                    WebClick
+                     <a href="/">WebClick</a>
                 </div>
                 <ul className={style.one_ul}>
                     <li><a href="/">{t("nav_main")}</a></li>
