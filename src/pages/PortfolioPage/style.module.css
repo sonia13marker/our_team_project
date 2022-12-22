@@ -134,6 +134,7 @@
 .project__image:hover {
     filter: saturate(1);
 }
+
 .project_list_wrapper {
     display: flex;
     flex-direction: column;
