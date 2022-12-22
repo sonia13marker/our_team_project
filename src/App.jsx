@@ -44,11 +44,11 @@ export const App = () => {
             <BrowserRouter>
                 <Layout>
                     <Routes>
-                        <Route path="*" element={<NotFound />} />
                         <Route path="/" element={<MainPage />}/>
                         <Route path="/about" element={<AboutPage/>}/>
                         <Route path="/portfolio" element={<PortfolioPage/>}/>
                         <Route path="/contacts" element={<ContactsPage/>}/>
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Layout>
             </BrowserRouter>
