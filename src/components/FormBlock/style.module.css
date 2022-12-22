@@ -1,10 +1,11 @@
 .wrapper__form {
-    margin-top: 400px;
+    margin-top: 500px;
 }
 
 .wrapper__h2 {
+    position: relative;
     font-family: 'Ruda', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 6.5vw;
     line-height: 110px;
     letter-spacing: 0.015em;
@@ -42,12 +43,14 @@
 
 @media (max-width: 780px){
     .wrapper__form {
-        margin-top: 700px;
+        margin-top: 800px;
     }
+
     .wrapper__h2 {
-        font-size: 50px;
+        font-size: 40px;
         margin-left: 10px;
     }
+
     .wrapper__text {
        font-size: 18px;
         margin-left: 10px;
