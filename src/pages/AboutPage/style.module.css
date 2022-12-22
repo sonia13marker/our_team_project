@@ -13,3 +13,9 @@
     margin-left: 18%;
     margin-top: 3rem;
 }
+
+@media (max-width: 780px) {
+    .about_header {
+        margin-left: 20px;
+    }
+}

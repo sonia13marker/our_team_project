@@ -24,3 +24,9 @@
     display: inline-block;
     margin-right: 230px;
 }
+
+@media (max-width: 780px) {
+    .active {
+        margin-right: 0px;
+    }
+}

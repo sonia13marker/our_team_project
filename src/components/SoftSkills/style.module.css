@@ -45,20 +45,18 @@
     color: var(--color);
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .background {
-    font-size: 12.5vw;
+        font-size: 12.5vw;
     }
 
 }
-@media screen  and (max-width: 780px) {
-
-.item {
-    padding: 30px 0;
-    font-size: 25px;
-}
-.content {
-    padding: 30px;
-}
-
+@media (max-width: 780px) {
+    .item {
+        padding: 30px 0;
+        font-size: 25px;
+    }
+    .content {
+        padding: 30px;
+    }
 }
