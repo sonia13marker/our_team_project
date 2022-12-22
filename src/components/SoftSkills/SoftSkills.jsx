@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import "./style.css";
 
 import { withTranslation } from "react-i18next";
+import MediaQuery from "react-responsive";
 
 class SoftSkills extends Component {
     constructor(props){
@@ -54,40 +55,54 @@ class SoftSkills extends Component {
                     <ul className={style.ul}>
                         <li className={style.item} onMouseEnter={() => this.handleClick(this.text1, this.arrowTip1, this.arrow1, "active", "animated_arrow_tip", "animated_arrow")} onMouseLeave={() => this.handleClick(this.text1, this.arrowTip1, this.arrow1, "active", "animated_arrow_tip", "animated_arrow")}>
                             <div ref={this.text1}>{t("responsibility")}</div>
-                            <div ref={this.arrowTip1}></div>
-                            <div ref={this.arrow1}></div>
+                            <MediaQuery minWidth={760}>
+                                <div ref={this.arrowTip1}></div>
+                                <div ref={this.arrow1}></div>
+                            </MediaQuery>
                         </li>
                         <li className={style.item} onMouseEnter={() => this.handleClick(this.text2, this.arrowTip2, this.arrow2, "active", "animated_arrow_tip", "animated_arrow")} onMouseLeave={() => this.handleClick(this.text2, this.arrowTip2, this.arrow2, "active", "animated_arrow_tip", "animated_arrow")}>
                             <div ref={this.text2}>{t("quality")}</div>
-                            <div ref={this.arrowTip2}></div>
-                            <div ref={this.arrow2}></div>
+                            <MediaQuery minWidth={760}>
+                                <div ref={this.arrowTip2}></div>
+                                <div ref={this.arrow2}></div>
+                            </MediaQuery>
                         </li>
                         <li className={style.item} onMouseEnter={() => this.handleClick(this.text3, this.arrowTip3, this.arrow3, "active", "animated_arrow_tip", "animated_arrow")} onMouseLeave={() => this.handleClick(this.text3, this.arrowTip3, this.arrow3, "active", "animated_arrow_tip", "animated_arrow")}>
                             <div ref={this.text3}>{t("initiative")}</div>
-                            <div ref={this.arrowTip3}></div>
-                            <div ref={this.arrow3}></div>
+                            <MediaQuery minWidth={760}>
+                                <div ref={this.arrowTip3}></div>
+                                <div ref={this.arrow3}></div>
+                            </MediaQuery>
                         </li>
                         <li className={style.item} onMouseEnter={() => this.handleClick(this.text4, this.arrowTip4, this.arrow4, "active", "animated_arrow_tip", "animated_arrow")} onMouseLeave={() => this.handleClick(this.text4, this.arrowTip4, this.arrow4, "active", "animated_arrow_tip", "animated_arrow")}>
                             <div ref={this.text4}>{t("cohesion")}</div>
-                            <div ref={this.arrowTip4}></div>
-                            <div ref={this.arrow4}></div>
+                            <MediaQuery minWidth={760}>
+                                <div ref={this.arrowTip4}></div>
+                                <div ref={this.arrow4}></div>
+                            </MediaQuery>
                             <div>
                             </div>
                         </li>
                         <li className={style.item} onMouseEnter={() => this.handleClick(this.text5, this.arrowTip5, this.arrow5, "active", "animated_arrow_tip", "animated_arrow")} onMouseLeave={() => this.handleClick(this.text5, this.arrowTip5, this.arrow5, "active", "animated_arrow_tip", "animated_arrow")}>
                             <div ref={this.text5}>{t("sociability")}</div>
-                            <div ref={this.arrowTip5}></div>
-                            <div ref={this.arrow5}></div>
+                            <MediaQuery minWidth={760}>
+                                <div ref={this.arrowTip5}></div>
+                                <div ref={this.arrow5}></div>
+                            </MediaQuery>
                         </li>
                         <li className={style.item} onMouseEnter={() => this.handleClick(this.text6, this.arrowTip6, this.arrow6, "active", "animated_arrow_tip", "animated_arrow")} onMouseLeave={() => this.handleClick(this.text6, this.arrowTip6, this.arrow6, "active", "animated_arrow_tip", "animated_arrow")}>
                             <div ref={this.text6}>{t("completion_on_time")}</div>
-                            <div ref={this.arrowTip6}></div>
-                            <div ref={this.arrow6}></div>
+                            <MediaQuery minWidth={760}>
+                                <div ref={this.arrowTip6}></div>
+                                <div ref={this.arrow6}></div>
+                            </MediaQuery>
                         </li>
                         <li className={style.item} onMouseEnter={() => this.handleClick(this.text7, this.arrowTip7, this.arrow7, "active", "animated_arrow_tip", "animated_arrow")} onMouseLeave={() => this.handleClick(this.text7, this.arrowTip7, this.arrow7, "active", "animated_arrow_tip", "animated_arrow")}>
                             <div ref={this.text7}>{t("dedication_to_work")}</div>
-                            <div ref={this.arrowTip7}></div>
-                            <div ref={this.arrow7}></div>
+                            <MediaQuery minWidth={760}>
+                                <div ref={this.arrowTip7}></div>
+                                <div ref={this.arrow7}></div>
+                            </MediaQuery>
                         </li>
                     </ul>
                 </div>

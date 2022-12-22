@@ -29,7 +29,7 @@ export const MainPage = () => {
                 <MenuHamburger/>
             </MediaQuery>
             <div className={style.main_page}>
-                <MediaQuery minWidth={720}>
+                <MediaQuery minWidth={780}>
                     <LeftPanel/>
                 </MediaQuery>
                 <div className={style.wrapper}>
