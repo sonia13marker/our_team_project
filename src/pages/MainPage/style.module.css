@@ -1,6 +1,4 @@
-/* поменять бэк у всей страницы на ВОТ ЭТОТ БЕЛЫЙ * {
-    background-color: #fefefe;
-} */
+
 h1 {
     margin: 0;
     padding: 0;
@@ -18,10 +16,6 @@ h1 {
 .image {
     height: 100vh;
     width: 100%;
-
-    /*
-    background-image: url("https://sun9-north.userapi.com/sun9-79/s/v1/ig2/POxLrqMXw3Glga4JguF74-dUXkrn_RubPav7uMnhjtcQ82zdMj-ho5Zkf_eJGadSxzfX6qkRhABga42LCzGN1pjJ.jpg?size=1440x2160&quality=95&type=album");
-    */
 }
 
 .contentSide {
@@ -32,10 +26,12 @@ h1 {
 
 .infoBlock {
     margin-top: 30vh;
-    margin-left: 140px;
+    margin-left: 120px;
+    padding-left: 150px;
     margin-right: 20px;
     font-size: 35px;
     font-weight: 400;
+    width: 500px;
 }
 
 .infoBlock > p {
@@ -55,11 +51,15 @@ h1 {
     border: none;
     cursor: pointer;
 }
+.btn:hover {
+    border-top: 2px solid var(--light-gray);
+    border-bottom: 2px solid var(--light-gray);
+}
 
 .headingTitle1 {
     font-size: 8vw;
     color: var(--color-additional);
-    margin: 0;
+    /* margin-left: 150px; */
     position: relative;
     z-index: 2;
 }
@@ -68,6 +68,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px var(--color-additional);
     position: absolute;
+    /* margin-left: 150px; */
     left: 3px;
     top: 33px;
     transform: translateY(-50%);
@@ -85,6 +86,10 @@ h1 {
 
 .changeBtn {
     cursor: pointer;
+}
+
+.changeBtn:hover {
+    color: var(--light-gray);
 }
 
 @media screen and (max-width:1280px) {

@@ -3,7 +3,7 @@ import logo_black from '../../images/logo_black.svg';
 import logo_white from '../../images/logo_white.svg';
 import { ColorImg } from '../ColorImg/ColorImg';
 // import share_btn from '../../pr/share_btn.png';
-import { ButtonShare } from '../ButtonShare/ButtonShare';
+import {ButtonShare} from '../../components/ButtonShare/ButtonShare';
 
 export const LeftPanel = () => {
     return (
@@ -14,7 +14,6 @@ export const LeftPanel = () => {
             </div>
             <div className={style.panelElem}>
                 <ButtonShare />
-                {/* <img src={share_btn} alt="share" /> */}
                
             </div>
         </div>

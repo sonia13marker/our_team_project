@@ -17,6 +17,21 @@
 .style_link {
     color: var(--color);
     text-decoration: none;
+    transition: box-shadow .5s;
+}
+.style_link::after {
+    content: "";
+    background-color: var(--color);
+    display: block;
+    margin-top: 2px;
+    height: 2px;
+    width: 0;
+    -webkit-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.style_link:hover::after {
+    width: 100%;
 }
 
 .item {
@@ -28,7 +43,6 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 .item_box {
     /* padding: 40px 0; */
     height: 100px;
@@ -67,6 +81,9 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+}
+.btn:hover {
+    color: var(--light-gray);
 }
 
 .lang_arrow {

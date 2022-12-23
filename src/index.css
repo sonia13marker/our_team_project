@@ -3,6 +3,7 @@
     --color-additional: #111;
     --light-gray: #A3A3A3;
     --hover-button: rgba(0, 0, 0, .5);
+    --border-style: rgba(254, 254, 254, 0.4);
 }
 
 :root[data-theme="dark"] {
@@ -10,6 +11,7 @@
     --color-additional: #FEFEFE;
     --light-gray: #5A5A5A;
     --hover-button: rgba(161, 158, 158, 0.5);
+    --border-style: rgba(17, 17, 17, 0.5);
 }
 
 body {

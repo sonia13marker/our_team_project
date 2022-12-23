@@ -93,6 +93,9 @@ a {
     color: var(--color-additional);
     cursor: pointer;
 }
+.changeBtn:hover {
+    color: var(--light-gray);
+}
 .deg {
     transform: rotate(90deg);
     margin-left: 40px;
@@ -120,6 +123,9 @@ a {
     font-weight: 500;
     border: none;
     cursor: pointer;
+}
+.btn:hover {
+    color: var(--light-gray);
 }
 
 @media (max-width: 1150px){

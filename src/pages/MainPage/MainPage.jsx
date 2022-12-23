@@ -35,17 +35,17 @@ export const MainPage = () => {
                 <div className={style.wrapper}>
                     <div className={style.contentSide}>
                         <div className={style.infoBlock}>
-                            <p><span className={style.headingTitle1}>WebClick — </span><span className={style.headingTitle1Stroke1}>WebClick — </span><br />{t("mainpage_description")}</p>
+                            <p><span className={style.headingTitle1}>WebClick — </span><span className={style.headingTitle1Stroke1}>WebClick — </span>{t("mainpage_description")}</p>
                             <Button />
                         </div>
                     </div>
                     <div className={style.changeBtns}>
                             <p className={style.changeBtn} onClick={() => changeLanguage('ru')}>RU</p>
                             <p className={style.changeBtn} onClick={() => changeLanguage('en')}>EN</p>
-
+                            
                             <ThemeContext.Consumer>
                                 {({ theme, setTheme }) => (
-                                    <button
+                                    <button 
                                         className={style.btn}
                                         onClick={() => {
                                             if (theme === themes.light) setTheme(themes.dark)

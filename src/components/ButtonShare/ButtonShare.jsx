@@ -26,7 +26,7 @@ export const ButtonShare = () => {
     const copied_black = i18n.language === "ru" ?  copy_btn_black : copy_en_btn
     const copied_white = i18n.language === "ru" ?  copy_btn_white : copy_en_btn_black
 
-    /*это комментарии для замены кнопки, которая сейчас, на только коипрование ссылки при нажатии*/
+    /* копирует ссылку при нажатии*/
     const [copied, setCopied] = useState(false);
 
     function copy() {
@@ -38,8 +38,7 @@ export const ButtonShare = () => {
       document.body.removeChild(el);
       setCopied(true);
     }
-    // const telegram = "https://web.telegram.org/";
-    // const vk="https://vk.com/";
+
     return (
         <div>
             <button onClick={copy} className={style.button}>{!copied ? <ColorImg src_white={share_black} src_dark={share_white} alt="share"/>
@@ -47,20 +46,5 @@ export const ButtonShare = () => {
             : <ColorImg src_white={copied_black} src_dark={copied_white} alt="copy"/>}
         </button>
         </div>
-    //     <div>
-    //   <RWebShare
-    //     data={{
-    //       text: "WebClick - креативное агенство по созданию веб-сайтов",
-    //       url: "http://localhost:3000",
-    //       sites: vk['https://vk.com/'], 
-    //       title: "WebClick",
-    //     }}
-    //     onClick={() => console.log("ссылка была скопирована")}
-    //   >
-    //     <button className={style.button}>
-    //     <ColorImg src_white={share_btn_black} src_dark={share_btn_white} alt="share"/>
-    //       </button>
-    //   </RWebShare>
-    // </div>
     )
 }

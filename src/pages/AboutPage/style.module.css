@@ -10,8 +10,7 @@
     font-weight: 400;
     color: var(--color-additional);
     font-size: 4rem;
-    margin-left: 18%;
-    margin-top: 3rem;
+    margin-left: 8vw;
 }
 
 @media (max-width: 780px) {

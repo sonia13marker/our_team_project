@@ -106,7 +106,14 @@ input:focus {
     color: var(--color-additional);
     margin-bottom: 70px;
 }
-
+.go {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.go:hover {
+    text-decoration: underline;
+    color: var(--light-gray);
+}
 input[type=checkbox] {
     border: 3px solid var(--color-additional);
     padding: 0.5em;
@@ -114,6 +121,10 @@ input[type=checkbox] {
 
 .red {
     color: #e1271d;
+}
+.col {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 780px) {

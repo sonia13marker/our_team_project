@@ -69,6 +69,7 @@
     "message4": "You have exceeded the message size (maximum - 300 characters)",
     "message5": "You have not consented to the processing of data ",
     "agree": "I give my consent to the processing of personal data",
+    "follow": "(follow)",
     "message_message": "Message: ",
     "phone_number": "Phone: ",
     "projects": "projects",
